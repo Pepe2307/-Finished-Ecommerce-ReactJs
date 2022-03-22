@@ -1,5 +1,9 @@
+/*******************************    APP    ********************************/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
 .App {
-  text-align: center;
+  	text-align: center;
+  	/* background: rgba(23,42,85,255); */
 }
 
 .App-logo {
@@ -13,19 +17,42 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*******************************    APP-HEADER   ********************************/
+.App-nav {
+	font-size: calc(10px + 2vmin);
+	color: white;
+	font-family:'Ubuntu', sans-serif;
+/* 	font-family: 'Roboto', sans-serif; */
+
+	/* background-color: #1658dd; */
+	background-image: url(../recursos/montana.jpg);
+	background-size:cover;
+	
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
 }
 
 .App-link {
-  color: #61dafb;
+  	color: #ffffff;
+	text-decoration: none;
+
+  	background-color: #ffffff10;
+  	backdrop-filter: blur(4px);
+  	-webkit-backdrop-filter: blur(4px);
+
+	border-radius: 20px;
+	padding: 20px;
+	padding-bottom: 50px;
+	padding-right: 40px;
+	padding-left: 40px;
+	/* box-shadow: 0 0 30px 10px rgba(0,0,0,0.50); */
+	-webkit-box-shadow: 0 0 25px rgb(0, 0, 0);
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +62,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*******************************    APP-NAV  ********************************/
+.App-nav{
+
 }
