@@ -17,7 +17,7 @@ function App() {
 			Bienvenido! Seleccione un destino:
 			</p>
 			
-			Where to travel...
+			Where to travel now...
 			</a>
 
       	</header>
