@@ -1,11 +1,25 @@
+/*REACT*/
+import React  from 'react';
+
+/*COMPONENTES*/
 import logo from './logo.svg';
+import imagen from './recursos/montana.jpg'
+
+/*CSS*/
 import './App.css';
+/*NAVBAR*/
+import Navbar from './components/NavBar/navBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> {/*APLICACION*/}
 		
+        <Navbar/>
+        
     	<header className="App-nav">
+
+            {/* HEADER */}
+            <Navbar/>
 
 			<img src={logo} className="App-logo" alt="logo" />
 
@@ -26,7 +40,7 @@ function App() {
 		<nav className="App-navigation">
 
 			<div className="borde">
-			<img src="../recursos/montana.jpg"></img>
+			{/* <img src={imagen}></img> */}
 			Bienvenido a Invento Travels	
 			</div>
 
