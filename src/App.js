@@ -1,29 +1,39 @@
 /*REACT*/
 import React  from 'react';
+/*CSS*/
+import './App.css';
 
 /*COMPONENTES*/
 import logo from './logo.svg';
 import imagen from './recursos/montana.jpg'
 
-/*CSS*/
-import './App.css';
+
 /*NAVBAR*/
-import Navbar from './components/NavBar/navBar';
+import Navbar from './components/Header/navBar';
+/*HEADER 2*/
+import Navbar2 from './components/Header/headerResonsive';
+/*Galeria*/
+import GaleriaSlider from './components/Slider/galeriaSlider';
+
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
-    <div className="App"> {/*APLICACION*/}
-		
-        <Navbar/>
+    /**********************    APP    ********************/
+    <div className="App">
         
-    	<header className="App-nav">
+        {/**********************    HEADER    ********************/}
+        <Navbar2/>
+        
+        <GaleriaSlider/>
 
+        <ItemListContainer props="(Prop user - texto cambiante)"/>
+
+        {/**********************    APP 1    ********************/}
+    	<header className="App-nav">
             {/* HEADER */}
             <Navbar/>
-
 			<img src={logo} className="App-logo" alt="logo" />
-
-			
 
 			<a className="App-link" href="https://reactjs.org" target="_blank"
 			rel="noopener noreferrer">
@@ -33,7 +43,7 @@ function App() {
 			
 			Where to travel now...
 			</a>
-
+            
       	</header>
 
 
@@ -54,12 +64,6 @@ function App() {
 			</a>
 
 		</nav>
-	
-
-	
-
-    
-
 
 
     </div>

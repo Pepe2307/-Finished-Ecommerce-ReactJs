@@ -1,8 +1,5 @@
-/*REACT*/
 import React from 'react'
-/*CSS*/
 import './navBarStyles.css';
-
 
 const Navbar = () => {
     return(
@@ -11,7 +8,7 @@ const Navbar = () => {
                 <li> <a href="#"> Home </a> </li>
                 <li> <a href="#"> Invento </a> </li>
                 <li> <a href="#"> Destinos </a> </li>
-                <li> <a href="#"> Recomendacioes </a> </li>
+                <li> <a href="#"> Recomendaciones </a> </li>
             </ul>
         </div>
 
@@ -21,9 +18,9 @@ const Navbar = () => {
 
             </NavLink>
         </Nav>
-    </> */
+    </>
+    */
+   
     )
 }
-
 export default Navbar;
-
