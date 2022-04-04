@@ -14,8 +14,14 @@ import Navbar from './components/Header/navBar';
 import Navbar2 from './components/Header/headerResonsive';
 /*Galeria*/
 import GaleriaSlider from './components/Slider/galeriaSlider';
-
+/*Carrito/Lista*/
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+/*Contador*/
+import ItemCount from './components/ItemCount/ItemCount';
+/*Cards*/
+import Card from './components/Cards/Card';
+
+
 
 function App() {
   return (
@@ -28,6 +34,8 @@ function App() {
         <GaleriaSlider/>
 
         <ItemListContainer props="(Prop user - texto cambiante)"/>
+
+        
 
         {/**********************    APP 1    ********************/}
     	<header className="App-nav">
@@ -43,11 +51,13 @@ function App() {
 			
 			Where to travel now...
 			</a>
+
+            <ItemCount/>
             
       	</header>
 
 
-		<nav className="App-navigation">
+		<nav className="App-second-part">
 
 			<div className="borde">
 			{/* <img src={imagen}></img> */}
@@ -62,6 +72,8 @@ function App() {
 			
 			Where to travel...
 			</a>
+
+            <Card/>
 
 		</nav>
 

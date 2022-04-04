@@ -5,8 +5,6 @@ const ItemListContainer = ({ props }) => {
   return (
     <div>
         <h3 className='titulo_prop'>Bienvenido usuario: {props}</h3>
-        
-
     </div>
   )
 }

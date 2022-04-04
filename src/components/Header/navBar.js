@@ -10,17 +10,7 @@ const Navbar = () => {
                 <li> <a href="#"> Destinos </a> </li>
                 <li> <a href="#"> Recomendaciones </a> </li>
             </ul>
-        </div>
-
-    /* <>
-        <Nav>
-            <NavLink to "/">
-
-            </NavLink>
-        </Nav>
-    </>
-    */
-   
+        </div> 
     )
 }
 export default Navbar;
