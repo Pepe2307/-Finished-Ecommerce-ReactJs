@@ -6,4 +6,11 @@
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Rye', cursive;
 }
-
+.galeria_shop{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    justify-items: center;
+    align-items: center;
+    grid-gap: 100px;
+}

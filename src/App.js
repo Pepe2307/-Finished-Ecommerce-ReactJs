@@ -6,7 +6,7 @@ import './App.css';
 /*COMPONENTES*/
 import logo from './logo.svg';
 import imagen from './recursos/montana.jpg'
-
+import world from './recursos/world.png'
 
 /*NAVBAR*/
 import Navbar from './components/Header/navBar';
@@ -33,23 +33,23 @@ function App() {
         
         <GaleriaSlider/>
 
-        <ItemListContainer props="(Prop user - texto cambiante)"/>
-
         
 
         {/**********************    APP 1    ********************/}
     	<header className="App-nav">
-            {/* HEADER */}
+            {/* HEADER VIEJOS */}
             <Navbar/>
-			<img src={logo} className="App-logo" alt="logo" />
+
+            {/* Img girando */}
+			<img src={world} className="App-logo" alt="logo" />
+
 
 			<a className="App-link" href="https://reactjs.org" target="_blank"
 			rel="noopener noreferrer">
-			<p>
-			Bienvenido! Seleccione un destino:
-			</p>
-			
-			Where to travel now...
+                <p>
+                Bienvenido! Seleccione un destino:
+                </p>
+                Where to travel now...
 			</a>
 
             <ItemCount/>
@@ -57,7 +57,17 @@ function App() {
       	</header>
 
 
+        {/**********************    APP 2    ********************/}
 		<nav className="App-second-part">
+
+            
+
+
+            {/* <div class="segment"></div>
+            <svg class="divider" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z"></path>
+            </svg> */}
+
 
 			<div className="borde">
 			{/* <img src={imagen}></img> */}
@@ -73,11 +83,16 @@ function App() {
 			Where to travel...
 			</a>
 
-            <Card/>
+            {/* GALERIA */}
 
+            <ItemListContainer props="(Prop user - texto cambiante)"/>
 		</nav>
 
 
+        {/* <footer>
+            <div id="divider"></div>
+        </footer>
+ */}
     </div>
   );
 }

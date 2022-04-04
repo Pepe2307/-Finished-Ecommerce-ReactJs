@@ -9,7 +9,8 @@ const ItemCount = () => {
     <div>
         <h2 className='counter'>{contador}</h2>
         
-        <button className='raise' onClick={() => setContador (contador +1)}>Incrementar
+        <button className='raise' onClick={() => setContador (contador +1)}
+        disabled={contador === 3}>Incrementar
         </button>
         
         <button className='raise' onClick={() => setContador (contador -1)}
