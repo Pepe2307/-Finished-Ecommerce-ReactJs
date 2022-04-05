@@ -134,13 +134,11 @@ button {
     --hover: #47bedf;
     background-color: #185dbe;
     border-radius: 20px;
-    
-    /* width: 60%; */
-}
-.counter{
+
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
 }
+
   
 
 h1 {

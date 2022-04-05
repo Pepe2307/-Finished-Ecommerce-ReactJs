@@ -61,7 +61,8 @@ const Navbar2 = () => {
             </div>
 
             <h1 className='titulo'>
-                Espacio separador de nuevo header responsive
+                <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                ^^ Nuevo Header Responsive ^^
                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
             </h1>
         </>

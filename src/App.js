@@ -60,9 +60,6 @@ function App() {
         {/**********************    APP 2    ********************/}
 		<nav className="App-second-part">
 
-            
-
-
             {/* <div class="segment"></div>
             <svg class="divider" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <path d="M0 0 L50 100 L100 0 Z"></path>

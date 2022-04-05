@@ -8,14 +8,31 @@
     flex-direction: column;
     justify-content:space-between;
     border-radius: 20px;
+
     -webkit-box-shadow: 0 0 25px rgb(0, 0, 0);
     box-shadow: 0 0 25px rgb(0, 0, 0);
+    
+    transition: 0.2s;
+    --hover: #ffffff;
+}
+
+.Card:hover,
+.Card:focus {
+    /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
+    box-shadow: 0 0 25px var(--hover);
+    transform: translateY(-2.25em);
+    transition-duration: 200ms;
 }
 
 .Card img{
     width: 100%;
-    height: 100%;
+    height: 270px;
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+
+  
+
+

@@ -4,7 +4,7 @@ import './galeriaSliderStyles.css';
 const GaleriaSlider = () => {
   return (
     <div className='galeria_lugares'>
-        <h1>(Futura Galeria)</h1>
+        <h1>(Futura Galeria SLIDER)</h1>
     </div>
   )
 }
