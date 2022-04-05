@@ -1,43 +1,38 @@
 import React from 'react'
-import './ItemListConainerStyle.css'
+/*import CSS*/
 import Card from '../Cards/Card'
 
 import foto from '../../recursos/Cards/ayumu.png'
 import forest from '../../recursos/Cards/forest.jpg'
 import chika from '../../recursos/Cards/chika-space.jpg'
-import ItemList from '../ItemList/ItemList'
 
-const ItemListContainer = ({ props }) => {
+const ItemList = () => {
   return (
-    <div>
-        <h3 className='titulo_prop'>Bienvenido usuario: {props}</h3>
-        <h2>Lista de lugares a visitar:</h2>
-
-        {/* <div className='galeria_shop'>
+        <div className='galeria_shop'>
             <Card 
             img={forest}
             titulo="Bosque"
             descripcion="Bosque descripcion y precio"/>
-           
+
            <Card 
             img={require('../../recursos/Cards/city.jpg')}
             titulo="Ciudad"
             descripcion="Ciudad descripcion"/>
 
             <Card 
-            img={foto}
-            titulo="Bosque"
+            img={require('../../recursos/Cards/waterfall.jpg')}
+            titulo="Cascada"
             descripcion="Bosque descripcion"/>
+
 
             <Card 
-            img={chika}
-            titulo="Bosque"
+            img={require('../../recursos/Cards/sea.jpg')}
+            titulo="Oceano"
             descripcion="Bosque descripcion"/>
-
 
             <Card 
             img={require('../../recursos/Cards/starry-night.jpg')}
-            titulo="Bosque"
+            titulo="Egipto"
             descripcion="Bosque descripcion"/>
 
             <Card 
@@ -45,6 +40,7 @@ const ItemListContainer = ({ props }) => {
             titulo="London"
             descripcion="London LOREM"/>
 
+
             <Card 
             img={forest}
             titulo="Bosque"
@@ -54,12 +50,8 @@ const ItemListContainer = ({ props }) => {
             img={forest}
             titulo="Bosque"
             descripcion="Bosque descripcion"/>
-        </div> */}
-        
-        <ItemList/>
-        
     </div>
   )
 }
 
-export default ItemListContainer
+export default ItemList

@@ -27,23 +27,8 @@ const Card = (props) => { /*Sacando corchetes a props*/
 export default Card
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function App() {
+ /* EJEMPLO DE PROPS:
+ function App() {
   return (
     <div className="wrapper">
       <Card
