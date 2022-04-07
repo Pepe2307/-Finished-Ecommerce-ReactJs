@@ -5,6 +5,7 @@
     color: coral;
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Rye', cursive;
+    margin: 0;
 }
 .galeria_shop{
     display: grid;

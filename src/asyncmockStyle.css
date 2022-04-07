@@ -1,4 +1,4 @@
-.Card{
+.products{
     width: 400px;
     height: 700px;
     background-color: rgb(46, 46, 46);
@@ -16,31 +16,15 @@
     --hover: #ffffff;
 }
 
-.Card:hover,
-.Card:focus {
+.products:hover,
+.products:focus {
     /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
     box-shadow: 0 0 25px var(--hover);
     transform: translateY(-2.25em);
     transition-duration: 200ms;
 }
 
-.Card img{
-    width: 100%;
-    height: 270px;
-
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.Card .imagen{
-    width: 100%;
-    height: 270px;
-
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.imagen{
+.products img{
     width: 100%;
     height: 270px;
 

@@ -1,5 +1,4 @@
-import React from 'react'
-/*import CSS*/
+/* import React from 'react'
 import Card from '../Cards/Card'
 
 import foto from '../../recursos/Cards/ayumu.png'
@@ -54,4 +53,19 @@ const ItemList = () => {
   )
 }
 
+export default ItemList */
+
+
+/* SEPARADOR ENTRE VIEJA Y NUEVA VERSION */
+import React from 'react'
+/* import Item from '../Item/Item'*/
+import Card from '../Cards/Card'
+
+const ItemList = ( {products} ) => {
+    return(
+        <div>
+            {products.map(prod => <Card key={prod.id} {...prod}/>)}
+        </div>
+    )
+}
 export default ItemList
