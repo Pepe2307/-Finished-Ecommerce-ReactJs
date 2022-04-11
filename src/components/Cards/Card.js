@@ -28,7 +28,7 @@ export default Card */
  /* SEPARADOR ENTRE VIEJA Y NUEVA VERSION */
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
-
+import './Card.css'
 
 const Card = ({img,titulo,descripcion}) => {
     return(
@@ -43,7 +43,7 @@ const Card = ({img,titulo,descripcion}) => {
                 <h1>{titulo}</h1>
                 <p>{descripcion}</p>
 
-                <button> Ver Detalle </button>
+                <button className='boton_detalle'> Ver Detalle </button>
 
                 <h3>Cantidad de Pasajes</h3>
                 

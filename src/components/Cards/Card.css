@@ -1,6 +1,6 @@
 .Card{
     width: 400px;
-    height: 700px;
+    height: 780px;
     background-color: rgb(46, 46, 46);
     color: white;
 
@@ -46,4 +46,20 @@
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+/*RAISE*/
+.boton_detalle:hover,
+.boton_detalle:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0 5px var(--hover);
+  transform: translateY(-0.25em);
+  transition-duration: 200ms;
+}
+
+.boton_detalle {
+    --color: white;
+    --hover: white;
+    /* background-color: #185dbe; */
+    border-radius: 20px;
 }

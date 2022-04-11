@@ -1,7 +1,3 @@
-import forest from './recursos/Cards/forest.jpg'
-import ciudad from './recursos/Cards/city.jpg'
-import cascada from './recursos/Cards/waterfall.jpg'
-
 const products = [
     {
         id:1,
@@ -21,25 +17,52 @@ const products = [
         titulo:"Cascada",
         descripcion:"Cascada descripcion"
     },
-
-    /* {   id: 1,
-        name: 'iphone 12',
-        price: 1000,
-        category: 'celular',
-        img: 'https',
-        stock: 25,
-        description: 'Descripcion de Iphone 12'
+    {
+        id:4,
+        img:require('./recursos/Cards/sea.jpg'),
+        titulo:"Oceano",
+        descripcion:"Oceano descripcion"
     },
-    { id: 2, name: 'samsung s21', price: 800, category: 'celular', img: 'https'},
-    { id: 3, name: 'Ipad 8va generacion', price: 1200, category: 'tablet', img:'https'} */
+    {
+        id:5,
+        img:require('./recursos/Cards/starry-night.jpg'),
+        titulo:"Egipto",
+        descripcion:"Egipto descripcion"
+    },
+    {
+        id:6,
+        img:require('./recursos/Cards/london.jpg'),
+        titulo:"London",
+        descripcion:"London descripcion"
+    },
+    {
+        id:7,
+        img:require('./recursos/Cards/london.jpg'),
+        titulo:"London",
+        descripcion:"London descripcion"
+    },
+
+    {
+        id:8,
+        img:require('./recursos/Cards/london.jpg'),
+        titulo:"Precio: 1000",
+        descripcion:"London descripcion London descripcion London descripcion London descripcion London descripcion"
+    }
 ]
 
 export const getProducts = () => {
-
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(products)
         }, 2000)
     })
 }
-  
+
+/*Desafio clase 7*/
+export const getProductsById = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 2000)
+    })
+}
