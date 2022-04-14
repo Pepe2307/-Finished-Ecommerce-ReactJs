@@ -64,19 +64,10 @@
   }
 }
 
-.svg_separador{
-    
-}
 
 /*******************************    APP-NAV  ********************************/
 .App-second-part{
     color: black;
 	text-decoration: none;
-
     background: #1b1b1b;
-    /* background: #1e1e1e; */
 }
-
-/* .separador{
-    background: transparent;
-} */

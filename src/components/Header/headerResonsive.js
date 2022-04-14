@@ -8,6 +8,8 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 import CartWidget from '../CartWidget/cartWidget';
 
+import { Link , NavLink} from 'react-router-dom';
+
 const Navbar2 = () => {
     return(
         <>
@@ -24,11 +26,26 @@ const Navbar2 = () => {
                 </div> */}
 
 
-                <div className="imagen_logo">
+                {/* <div className="imagen_logo">
                     <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
-                </div>
+                </div> */}
+                <NavLink to='/'   className='imagen_logo'>
+                    <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
+                </NavLink>
 
+                {/* PRUEBA LINK */}
+                {/* <Link className="imagen_logo">
+                    <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
+                </Link> */}
+                <Link to='/contador' className='imagen_logo'>Contador</Link>
+                <Link to='/navbar'   className='imagen_logo'>Navbar</Link>
+                <Link to='/list'     className='imagen_logo'>List</Link>
                 
+                
+
+
+
+
                 <div className='barras'>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </div>
@@ -60,11 +77,11 @@ const Navbar2 = () => {
 
             </div>
 
-            <h1 className='titulo'>
+            {/* <h1 className='titulo'>
                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 ^^ Nuevo Header Responsive ^^
                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-            </h1>
+            </h1> */}
         </>
    
     )
