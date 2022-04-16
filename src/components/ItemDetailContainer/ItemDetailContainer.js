@@ -1,10 +1,10 @@
-import React from 'react'
+/* import React from 'react'
 import { useState, useEffect } from 'react'
 import { getProductsById } from '../../asyncmock'
-import ItemDetails from '../ItemDetail/ItemDetail'
-/* import './ItemListConainerStyle.css' */
+import ItemDetail from '../ItemDetail/ItemDetail'
 
-const ItemListContainer = (props) => {
+
+const ItemDetailContainer = (props) => {
     const [products, setProducts] = useState([])
     
     useEffect(() => {
@@ -17,9 +17,51 @@ const ItemListContainer = (props) => {
 
     return(
         <div>
-            <ItemDetails products={products}/>
+            <ItemDetail products={products}/>
         </div>
     )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer
+ */
+
+/* NEW VER*/
+import React from 'react'
+import { useState, useEffect } from 'react'
+import { getProductsById } from '../../asyncmock'
+import ItemDetail from '../ItemDetail/ItemDetail'
+
+const ItemDetailContainer = () => { 
+    const [product, setProduct] = useState()
+    const [loading, setLoading] = useState(true)
+
+    useEffect( () => {
+        getProductsById(1). then(item => {
+            setProduct(item)
+        }).catch(err => {
+            console.log(err)
+        }).finally (() => {
+            setLoading(false)
+        })
+
+
+        return (() => {
+            setProduct()
+        })
+
+    }, [])
+
+    return (
+        <div className="ItemDetailContainer" >
+            {
+                loading ?
+                     <h1>CARGANDO...</h1> :
+                product ?
+                     <ItemDetail {...product} /> :
+                     <h1>El producto no existe</h1>
+            }
+        </div>
+    )
+}
+
+export default ItemDetailContainer

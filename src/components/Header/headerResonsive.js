@@ -37,14 +37,13 @@ const Navbar2 = () => {
                 {/* <Link className="imagen_logo">
                     <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
                 </Link> */}
-                <Link to='/contador' className='imagen_logo'>Contador</Link>
+                {/* <Link to='/contador' className='imagen_logo'>Contador</Link>
                 <Link to='/navbar'   className='imagen_logo'>Navbar</Link>
-                <Link to='/list'     className='imagen_logo'>List</Link>
-                
-                
-
-
-
+                <Link to='/list'     className='imagen_logo'>List</Link> */}    
+                <Link to='/list'     className='imagen_logo'>Lista</Link>
+                <Link to='/detalles'   className='imagen_logo'>Detalles</Link>
+                <Link to='/duo'     className='imagen_logo'>all</Link>
+            
 
                 <div className='barras'>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
