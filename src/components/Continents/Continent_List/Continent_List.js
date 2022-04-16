@@ -7,12 +7,12 @@ const Continent_List = ( {products} ) => {
     <div className='GaleriaContinentes'>
 
         <Continents_Card
-        titulo_cont='Europa'
-        imagen_cont={require('../../../recursos/Continentes/coliseo1.jpg')}/>
-        
-        <Continents_Card
         titulo_cont='Norteamerica'
         imagen_cont={require('../../../recursos/Continentes/goldengate.jpg')}/>
+
+        <Continents_Card
+        titulo_cont='Europa'
+        imagen_cont={require('../../../recursos/Continentes/coliseo1.jpg')}/>
 
         <Continents_Card
         titulo_cont='Sudamerica'

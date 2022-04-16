@@ -1,18 +1,3 @@
-/* import React from 'react'
-import Card from '../Cards/Card'
-
-const ItemDetails = ( {products} ) => {
-    return(
-        <div>
-            {products}
-        </div>
-    )
-}
-export default ItemDetails
- */
-
-
-
 /* NEW VER*/
 import React from 'react'
 import './ItemDetailStyle.css'

@@ -35,8 +35,6 @@ function App() {
 
             {/* RUTAS QUE APARECEN EN SI SE PRESIONA X BOTON EN HEADER */}
             <Routes>
-                <Route path='/' element={App}> </Route>
-                
                 {/* <Route path='/contador' element={<ItemCount/>}> </Route>
                 <Route path='/navbar' element={<Navbar2/>}> </Route> */}
                 <Route path='/duo' element={<> <ItemCount/> <Navbar2/></>}> </Route>
@@ -71,14 +69,16 @@ function App() {
             {/* <ItemListContainer/> */}
 
 
-            <Link to='/list'     className='imagen_logo'>LISTA</Link>
+            <Link to='/'           className='imagen_logo'>LISTA</Link>
             <Link to='/detalles'   className='imagen_logo'>DETALLES</Link>
 
             <Routes>
-                <Route path='/list' element={<ItemListContainer/>}> </Route>
+                <Route path='/' element={<ItemListContainer/>}> </Route>
                 <Route path='/detalles' element={<ItemDetailContainer/>}> </Route>
 
-                <Route path='/duo' element={<ItemListContainer/>}> </Route>
+                <Route path='/detalles/:productId' element={<ItemDetailContainer/>}> </Route>
+
+                <Route path='/duo' element={<> <ItemListContainer/> <ItemDetailContainer/> </>}> </Route>
                 
             </Routes>
 

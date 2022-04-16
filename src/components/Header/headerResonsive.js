@@ -40,9 +40,9 @@ const Navbar2 = () => {
                 {/* <Link to='/contador' className='imagen_logo'>Contador</Link>
                 <Link to='/navbar'   className='imagen_logo'>Navbar</Link>
                 <Link to='/list'     className='imagen_logo'>List</Link> */}    
-                <Link to='/list'     className='imagen_logo'>Lista</Link>
+                <Link to='/'     className='imagen_logo'>Lista</Link>
                 <Link to='/detalles'   className='imagen_logo'>Detalles</Link>
-                <Link to='/duo'     className='imagen_logo'>all</Link>
+                <Link to='/duo'     className='imagen_logo'>Todo</Link>
             
 
                 <div className='barras'>
@@ -52,8 +52,17 @@ const Navbar2 = () => {
 
                 <ul className='menu'>
                     <li className='menu_li'>
-                        <a href="#"> Home </a>
+                        <a href="">
+                            <NavLink to='/'   >
+                                Home
+                                <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
+                            </NavLink> 
+                        </a>
                     </li>
+
+                    {/* <li className='menu_li'>
+                        <a href="#"> Home </a>
+                    </li> */}
 
                     <li className='menu_li'>
                         <a href="#"> Destinos </a>

@@ -63,3 +63,9 @@
     /* background-color: #185dbe; */
     border-radius: 20px;
 }
+
+.detalle {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}

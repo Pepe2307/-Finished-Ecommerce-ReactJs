@@ -1,8 +1,10 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './Card.css'
+/*REACT ROUTER*/
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
-const Card = ({img,titulo,descripcion}) => {
+const Card = ({id, img,titulo,descripcion}) => {
     return(
         <div className='Card'>
 
@@ -15,7 +17,16 @@ const Card = ({img,titulo,descripcion}) => {
                 <p>{descripcion}</p>
 
 
-                <button className='boton_detalle'> Ver Detalle </button>
+                {/* <button className='boton_detalle'>
+                    <Link to='/detalles' className='detalle'>DETALLES</Link>
+                </button>
+
+                (VERSION WIDE)
+                */}
+
+                <Link to={`/detalles/${id}`} className='detalle'>
+                    <button className='boton_detalle'>DETALLE</button>
+                </Link>
 
 
                 <h3>Cantidad de Pasajes</h3>
