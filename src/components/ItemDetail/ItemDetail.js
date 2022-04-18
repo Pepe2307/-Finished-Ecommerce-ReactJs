@@ -1,5 +1,6 @@
 /* NEW VER*/
 import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetailStyle.css'
 
 const ItemDetail = ({ id, img, titulo, descripcion, categoria, precio, stock }) => {
@@ -16,6 +17,7 @@ const ItemDetail = ({ id, img, titulo, descripcion, categoria, precio, stock }) 
                 <p>Categoria: {categoria}</p>
                 <p>Precio: {precio}</p>
 
+                <ItemCount/>
 
         </div>
     )

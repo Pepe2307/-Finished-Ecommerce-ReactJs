@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './ItemCountStyle.css'
-
-
+import CartWidget from '../CartWidget/cartWidget';
+/*REACT ROUTER*/
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 const ItemCount = () => {
     const [contador, setContador] = useState(0);
@@ -13,12 +14,22 @@ const ItemCount = () => {
         disabled={contador === 3}>Incrementar
         </button>
         
+        {/* <CartWidget numero={0}/> */}
+
         <button className='raise' onClick={() => setContador (contador -1)}
         disabled={contador === 0}>Decrementar
         </button>
 
         <button className='raise' onClick={() => setContador (contador -contador)}>Reset
         </button>
+
+
+        <Link to='/cart'>
+            <button className='raise' onClick={console.log(contador)}>Comprar
+            </button>
+        </Link>
+
+        
     </div>
   )
 }
