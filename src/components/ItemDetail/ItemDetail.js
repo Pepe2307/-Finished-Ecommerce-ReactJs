@@ -1,9 +1,12 @@
 /* NEW VER*/
-import React from 'react'
+import React, { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetailStyle.css'
 
 const ItemDetail = ({ id, img, titulo, descripcion, categoria, precio, stock }) => {
+
+    /* const [quantity , setAquantity] = useState(0) */
+
     return(
         <div className='ItemDetail'>
 

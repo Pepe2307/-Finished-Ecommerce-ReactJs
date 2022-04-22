@@ -3,43 +3,50 @@ const products = [
         id:1,
         img:require('./recursos/Cards/forest.jpg'),
         titulo:"Bosque",
-        descripcion:"Bosque descripcion y precio"
+        descripcion:"Bosque descripcion y precio",
+        categoria:"sudamerica"
     },
     {
         id:2,
         img:require('./recursos/Cards/city.jpg'),
         titulo:"Ciudad",
-        descripcion:"Ciudad descripcion"
+        descripcion:"Ciudad descripcion",
+        categoria:"asia"
     },
     {
         id:3,
         img:require('./recursos/Cards/waterfall.jpg'),
         titulo:"Cascada",
-        descripcion:"Cascada descripcion"
+        descripcion:"Cascada descripcion",
+        categoria:"sudamerica"
     },
     {
         id:4,
         img:require('./recursos/Cards/sea.jpg'),
         titulo:"Oceano",
-        descripcion:"Oceano descripcion"
+        descripcion:"Oceano descripcion",
+        categoria:"asia"
     },
     {
         id:5,
         img:require('./recursos/Cards/starry-night.jpg'),
         titulo:"Egipto",
-        descripcion:"Egipto descripcion"
+        descripcion:"Egipto descripcion",
+        categoria:"europa"
     },
     {
         id:6,
         img:require('./recursos/Cards/london.jpg'),
         titulo:"London",
-        descripcion:"London descripcion"
+        descripcion:"London descripcion",
+        categoria:"europa"
     },
     {
         id:7,
         img:require('./recursos/Cards/london.jpg'),
         titulo:"London",
-        descripcion:"London descripcion"
+        descripcion:"London descripcion",
+        categoria:"europa"
     },
 
     {
@@ -50,15 +57,16 @@ const products = [
     }
 ]
 
-export const getProducts = () => {
+/*BUSCAR PRODUCOS NORMAL Y POR CATEGORIA*/
+export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
-            resolve(products)
+            resolve(categoryId ? products.filter(prod => prod.categoria === categoryId) : products)
         }, 500)
     })
 }
 
-/*Desafio clase 7*/
+/*BUSCAR PRODUCOS PRODUCTOS POR ID */
 export const getProductsById = (id) => {
     return new Promise (resolve => {
         setTimeout(() => {
@@ -66,3 +74,12 @@ export const getProductsById = (id) => {
         }, 2000)
     })
 }
+
+/*BUSCAR PRODUCOS POR CATEGORIA*/
+/* export const getProducts = () => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(products)
+        }, 500)
+    })
+} */
