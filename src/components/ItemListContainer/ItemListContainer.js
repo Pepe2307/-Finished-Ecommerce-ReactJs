@@ -10,7 +10,7 @@ const ItemListContainer = (props) => {
     const [products, setProducts] = useState([])
 
     const {categoryId} = useParams()
-    
+
     
     useEffect(() => {
         getProducts(categoryId).then(prods => {
@@ -18,7 +18,7 @@ const ItemListContainer = (props) => {
         }).catch(error => {
             console.log(error)
         })
-   }, [])
+   }, [categoryId])
 
     return(
         <div>

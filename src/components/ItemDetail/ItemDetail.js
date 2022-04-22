@@ -3,9 +3,13 @@ import React, { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetailStyle.css'
 
-const ItemDetail = ({ id, img, titulo, descripcion, categoria, precio, stock }) => {
+const ItemDetail = ({ id, img, titulo, descripcion, categoria, precio, stock, setCart }) => {
 
     /* const [quantity , setAquantity] = useState(0) */
+
+
+    /* const objProd = {id, nombre_prod, price, quantity} */
+
 
     return(
         <div className='ItemDetail'>
@@ -20,7 +24,7 @@ const ItemDetail = ({ id, img, titulo, descripcion, categoria, precio, stock }) 
                 <p>Categoria: {categoria}</p>
                 <p>Precio: {precio}</p>
 
-                <ItemCount/>
+                <ItemCount /* setCart={setCart} objeto={objProd} */ />
 
         </div>
     )

@@ -23,6 +23,7 @@ import Continent_List from './components/Continents/Continent_List/Continent_Lis
 function App() {
 
     const [cart , setCart] = useState([])
+    console.log(cart)
 
     return (
     /**********************    APP    ********************/
@@ -70,7 +71,7 @@ function App() {
 
             <Routes>
                 <Route path='/' element={<ItemListContainer/>}> </Route>
-                <Route path='/detalles' element={<ItemDetailContainer/>}> </Route>
+                <Route path='/detalles' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
                 <Route path='/detalles/:productId' element={<ItemDetailContainer/>}> </Route>
                 
                 <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
