@@ -4,76 +4,106 @@ const products = [
         img:require('./recursos/Cards/forest.jpg'),
         titulo:"Bosque",
         descripcion:"Bosque descripcion y precio",
-        categoria:"sudamerica"
+        category:"sudamerica",
+        price:5000
     },
     {
         id:2,
         img:require('./recursos/Cards/city.jpg'),
         titulo:"Ciudad",
         descripcion:"Ciudad descripcion",
-        categoria:"asia"
+        category:"norteamerica",
+        price:10000
     },
     {
         id:3,
         img:require('./recursos/Cards/waterfall.jpg'),
         titulo:"Cascada",
         descripcion:"Cascada descripcion",
-        categoria:"sudamerica"
+        category:"sudamerica",
+        price:5000
     },
     {
         id:4,
         img:require('./recursos/Cards/sea.jpg'),
         titulo:"Oceano",
         descripcion:"Oceano descripcion",
-        categoria:"asia"
+        category:"asia",
+        price:10000
     },
     {
         id:5,
         img:require('./recursos/Cards/starry-night.jpg'),
         titulo:"Egipto",
         descripcion:"Egipto descripcion",
-        categoria:"europa"
+        category:"europa",
+        price:20000
+        
     },
     {
         id:6,
         img:require('./recursos/Cards/london.jpg'),
         titulo:"London",
         descripcion:"London descripcion",
-        categoria:"europa"
+        category:"europa",
+        price:20000
     },
     {
         id:7,
         img:require('./recursos/Cards/london.jpg'),
         titulo:"London",
         descripcion:"London descripcion",
-        categoria:"europa"
+        category:"europa",
+        price:20000
     },
 
     {
         id:8,
         img:require('./recursos/Cards/london.jpg'),
         titulo:"Precio: 1000",
-        descripcion:"London descripcion London descripcion London descripcion London descripcion London descripcion"
+        descripcion:"London descripcion London descripcion London descripcion London descripcion London descripcion",
+        price:20000
     }
 ]
 
-/*BUSCAR PRODUCOS NORMAL Y POR CATEGORIA*/
-export const getProducts = (categoryId) => {
+/*CATEGORIAS*/
+const categories = [
+    {id: 'sudamerica', description: 'Sudamerica'},
+    {id: 'asia', description: 'Asia'},
+    {id: 'europa', description: 'Europa'},
+    {id: 'norteamerica', description: 'Norteamerica'}
+]
+
+export const getCategories = () => {
     return new Promise (resolve => {
         setTimeout(() => {
-            resolve(categoryId ? products.filter(prod => prod.categoria === categoryId) : products)
-        }, 500)
+            resolve(categories)
+        }, 1000)
     })
 }
 
-/*BUSCAR PRODUCOS PRODUCTOS POR ID */
-export const getProductsById = (id) => {
+
+
+/*BUSCAR NORMAL/CATEGORIA*/
+export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.id == id))
+            resolve(categoryId ? products.filter(prod => prod.category === categoryId) : products)
+        }, 100)
+    })
+}
+
+
+/*BUSCAR POR ID */
+export const getProductsbyId = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
         }, 2000)
     })
 }
+
+
 
 /*BUSCAR PRODUCOS POR CATEGORIA*/
 /* export const getProducts = () => {

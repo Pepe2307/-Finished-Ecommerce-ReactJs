@@ -20,8 +20,14 @@ const ItemListContainer = (props) => {
         })
    }, [categoryId])
 
+
+    const handleClick = () => {
+        console.log('click en item list container')
+    }
+
+   
     return(
-        <div>
+        <div onClick={handleClick}>
             <ItemList products={products}/>
         </div>
     )

@@ -5,8 +5,15 @@ import './Card.css'
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 const Card = ({id, img,titulo,descripcion}) => {
+
+    const handleClick = (e) => {
+        e.stopPropagation()
+        console.log('handleclick funcionando click en card')
+    }
+
+
     return(
-        <div className='Card'>
+        <div className='Card' onClick={handleClick} >
 
                 <div className='imagen'>
                     <img src={img} alt={titulo}/>
