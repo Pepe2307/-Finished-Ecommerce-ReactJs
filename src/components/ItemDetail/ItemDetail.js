@@ -1,28 +1,30 @@
 import './ItemDetailStyle.css'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
-import { ItemDetailContainer, Detail } from './ItemDetail.elements'
+/* import { ItemDetailContainer, Detail } from './ItemDetail.elements' */
 import { useState, useContext } from 'react'
 import CartContext from '../CartContext/CartContext'
 
 
 
-const ItemDetail = ({ id, img, titulo, descripcion, categoria, price, stock, setCart }) => {
+const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock, setCart }) => {
 
 
     const [ quantity , setQuantity] = useState(0)
-    const { addItem, isInCart } = useContext(CartContext)
 
+
+    /* const { addItem, isInCart } = useContext(CartContext) */
     const handleOnAdd = (count) => {
         console.log('agregar al carrito')
         setQuantity(count)
 
 
-        const objProd = {id, nombre_prod, price, quantity}
+        const objProd = {id, titulo, price, quantity}
         /* const productObj = { id, name, price} */
 
 
-        addItem ({...productObj, quantity: count})
+        /* addItem ({...objProd, quantity: count}) */
     }
 
 
@@ -38,12 +40,13 @@ const ItemDetail = ({ id, img, titulo, descripcion, categoria, price, stock, set
 
                 <h1>Detalles - {titulo}</h1>
                 <p>{descripcion}</p>
-                <p>Categoria: {categoria}</p>
+                <p>Categoria: {category}</p>
                 <p>Precio: {price}</p>
 
                 <ItemCount /* setCart={setCart} objeto={objProd} */ />
+                {/* {isInCart(id) ? <Link to='/cart'><AddToCart>Ir al carrito</AddToCart></Link> : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>} */}
 
-                {isInCart(id) ? <Link to='/cart'><AddToCart>Ir al carrito</AddToCart></Link> : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>}
+                
                 {/* {quantity > 0 ? <Link to='/cart'><span>Agregar al carrito</span></Link> : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>} */}
                 {/* COMO IMPLEMENTAR^^^ */}
                 {/* COMO IMPLEMENTAR^^^ */}
