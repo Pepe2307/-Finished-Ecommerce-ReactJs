@@ -4,7 +4,7 @@ import CartWidget from '../CartWidget/cartWidget';
 /*REACT ROUTER*/
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
-const ItemCount = ( {setCart,objeto} ) => {
+const ItemCount = ( {initial, stock,onAdd, setCart,objeto} ) => {
     const [contador, setContador] = useState(0);
   return (
     <div>

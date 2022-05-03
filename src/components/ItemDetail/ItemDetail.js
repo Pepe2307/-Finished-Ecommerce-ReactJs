@@ -2,32 +2,24 @@ import './ItemDetailStyle.css'
 import React from 'react'
 import {Link} from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
-/* import { ItemDetailContainer, Detail } from './ItemDetail.elements' */
 import { useState, useContext } from 'react'
 import CartContext from '../CartContext/CartContext'
 
 
 
-const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock, setCart }) => {
+const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock}) => {
 
 
-    const [ quantity , setQuantity] = useState(0)
+    const { addItem, isInCart } = useContext(CartContext)
 
 
-    /* const { addItem, isInCart } = useContext(CartContext) */
-    const handleOnAdd = (count) => {
-        console.log('agregar al carrito')
-        setQuantity(count)
+    const handleAdd = (count) => {
+        const productObj = {
+            id, titulo,price
+        }
 
-
-        const objProd = {id, titulo, price, quantity}
-        /* const productObj = { id, name, price} */
-
-
-        /* addItem ({...objProd, quantity: count}) */
+        addItem(productObj)
     }
-
-
     
 
     return(
@@ -43,15 +35,72 @@ const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock, setC
                 <p>Categoria: {category}</p>
                 <p>Precio: {price}</p>
 
-                <ItemCount /* setCart={setCart} objeto={objProd} */ />
-                {/* {isInCart(id) ? <Link to='/cart'><AddToCart>Ir al carrito</AddToCart></Link> : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>} */}
+                <ItemCount/>
 
-                
-                {/* {quantity > 0 ? <Link to='/cart'><span>Agregar al carrito</span></Link> : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>} */}
-                {/* COMO IMPLEMENTAR^^^ */}
-                {/* COMO IMPLEMENTAR^^^ */}
-                {/* COMO IMPLEMENTAR^^^ */}
+                <footer className='ItemFooter'>
+                    { isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> :
+                    <ItemCount onAdd={handleAdd} stock={stock}/> } 
+                </footer>
         </div>
     )
 }
 export default ItemDetail
+
+
+
+
+
+/* 
+import React from 'react'
+import './ItemDetailStyle.css'
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import ItemCount from '../ItemCount/ItemCount'
+import CartContext from '../CartContext/CartContext'
+
+
+const ItemDetail = ({ id, titulo, img, category, description, price, stock }) => {
+    const { addItem, isInCart, getQuantityProd } = useContext(CartContext)
+
+
+    const handleAdd = (count) => {
+        const productObj = {
+            id, titulo,price, quantity: count
+        }
+
+        addItem(productObj)
+}
+
+    return (
+        <article className="CardItem">
+            <header className="Header">
+                <h2 className="ItemHeader">
+                    {titulo}
+                </h2>
+            </header>
+            <picture>
+                <img src={img} alt={titulo} className="ItemImg"/>
+            </picture>
+            <section>
+                <p className="Info">
+                    Categoria: {category}
+                </p>
+                <p className="Info">
+                    Descripción: {description}
+                </p>
+                <p className="Info">
+                    Precio: {price}
+                </p>
+            </section>           
+            <footer className='ItemFooter'>
+                { 
+                    false  
+                        ? <Link to='/cart' className='Option'>Ir al carrito</Link> 
+                        : <ItemCount onAdd={handleAdd} stock={stock} initial={getQuantityProd(id)}/> 
+                } 
+            </footer>
+        </article>
+    )
+}
+
+export default ItemDetail */
