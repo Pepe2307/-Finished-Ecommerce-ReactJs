@@ -20,6 +20,19 @@ import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 /*CONTINENTES*/
 import Continent_List from './components/Continents/Continent_List/Continent_List';
 
+/* NUEVOS IMPORTS
+import Index from './components/Index/Index'
+import Form from './components/Form/Form'
+import Cart from './components/Cart/Cart'
+import Footer from './components/Footer/Footer'
+import NotFound from './components/NotFound/NotFound'
+import { CartContextProvider } from './context/CartContext'
+import { NotificationProvider } from './notification/Notification'
+*/
+
+
+
+
 function App() {
 
     const [cart , setCart] = useState([])

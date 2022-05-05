@@ -10,7 +10,7 @@ import CartContext from '../CartContext/CartContext'
 const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock}) => {
 
 
-    const { addItem, isInCart } = useContext(CartContext)
+    /* const { addItem, isInCart } = useContext(CartContext)
 
 
     const handleAdd = (count) => {
@@ -19,8 +19,8 @@ const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock}) => 
         }
 
         addItem(productObj)
-    }
-    
+    } */
+
 
     return(
         <div className='ItemDetail'>
@@ -38,8 +38,8 @@ const ItemDetail = ({ id, img, titulo, descripcion, category, price, stock}) => 
                 <ItemCount/>
 
                 <footer className='ItemFooter'>
-                    { isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> :
-                    <ItemCount onAdd={handleAdd} stock={stock}/> } 
+                    { /* isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> : */
+                    /*<ItemCount  onAdd={handleAdd} stock={stock} />*/ } 
                 </footer>
         </div>
     )

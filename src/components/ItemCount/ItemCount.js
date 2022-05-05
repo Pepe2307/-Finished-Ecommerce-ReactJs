@@ -4,7 +4,7 @@ import CartWidget from '../CartWidget/cartWidget';
 /*REACT ROUTER*/
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
-const ItemCount = ( {initial, stock,onAdd, setCart,objeto} ) => {
+const ItemCount = ( {initial, stock,onAdd, setCart,objeto, Cart} ) => {
     const [contador, setContador] = useState(0);
   return (
     <div>
@@ -25,12 +25,13 @@ const ItemCount = ( {initial, stock,onAdd, setCart,objeto} ) => {
 
 
         <Link to='/cart'>
-            <button className='raise' onClick={() => console.log(contador)}>
+            <button className='raise' onClick={ () => {
+                console.log(contador);
+                /* setCart(objeto)
+                console.log(Cart) */}
+                }>
     
-                {/* onClick={ () => {
-                    console.log(contador);
-                    setCart(objeto)}
-                }> */}
+                
                 
                 Comprar
             </button>
