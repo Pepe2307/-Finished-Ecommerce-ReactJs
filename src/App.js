@@ -11,8 +11,6 @@ import Continent_List from './components/Continents/Continent_List/Continent_Lis
 /*EXTRAS*/
 import Presentacion from './components/Extras/Presentacion';
 import Separador from './components/Extras/Separador';
-/*Contador*/
-import ItemCount from './components/ItemCount/ItemCount';
 /*ITEM LIST*/
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 /*ITEM DETAIL*/
@@ -31,6 +29,7 @@ import { CartContextProvider } from './context/CartContext'
 import { NotificationProvider } from './notification/Notification' */
 
 
+
 function App() {
 
     const [cart , setCart] = useState([])
@@ -40,17 +39,17 @@ function App() {
         /* <NotificationProvider>
             <CartContextProvider> */
                 <BrowserRouter>
-
-                    {/**********************    APP    ********************/}
+                    {/* /**********************    APP    ********************/}
                     <div className="App">
                         
+
+                        {/**********************    PRESENTACION    ********************/}
                         <nav className="App-nav">
                             <Navbar/>
                             <Presentacion/>
-                            <Continent_List/>                            
+                            <Continent_List/>
                             <Separador/>
                         </nav>
-
                         {/**********************    GALERIA    ********************/}
                         <div>
 
@@ -60,23 +59,35 @@ function App() {
                             <Routes>
 
                                 <Route path='/' element={<ItemListContainer/>}> </Route>
-                                <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
-
                                 <Route path='/detalles' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
                                 <Route path='/detalles/:productId' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
+                                <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
                                 <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
-                                {/* <Route path='*' element={<NotFound />}/>
-                                <Route path='/form' element={<Form />}/>
-                                <Route path='/cart' element={<Cart />} /> */}
+                                <Route path='/cart' element={null}></Route>
 
+
+                                {/* <Route path='/' element={<ItemListContainer/>}> </Route>
+                                <Route path='/detalles' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
+                                <Route path='/detalles/:productId' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
+                                
+                                <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
+
+                                <Route path='/cart' element={null}></Route> */}
+
+                                {/* <Route path='/categoria/norteamerica' element={<ItemListContainer/>}> </Route>
+                                <Route path='/categoria/europa' element={<ItemListContainer/>}> </Route>
+                                <Route path='/categoria/sudamerica' element={<ItemListContainer/>}> </Route>
+                                <Route path='/categoria/asia' element={<ItemListContainer/>}> </Route> */}
                             </Routes>
 
                         </div>
- 
+
+
+                        
                     </div>
                 </BrowserRouter>
-            /* </CartContextProvider>
-        </NotificationProvider> */
+        /* </CartContextProvider>
+    </NotificationProvider> */
   );
 }
 
