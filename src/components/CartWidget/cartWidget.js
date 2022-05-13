@@ -20,7 +20,7 @@ const CartWidget = () => {
 
             <>
                 <Link to={'/cart'}>
-                    <div>
+                    <div className='imagen_logo'>
                         <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                         <div>
                             { getQuantity() }

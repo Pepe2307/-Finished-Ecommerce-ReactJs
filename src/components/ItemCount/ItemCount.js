@@ -26,35 +26,13 @@ const ItemCount = ( {initial, stock, onAdd} ) => {
 
         <h2 className='counter'>{count}</h2>
 
-
+        <button className='raise' onClick={increment}>Incrementar</button>
+        <button className='raise' onClick={decrement}>Decrementar</button>        
         
-        <button className="btn" onClick={decrement}>-</button>    
-        <button className="btn" onClick={increment}>+</button>
-
-        {/* <button className='raise' onClick={decrement}>Decrementar</button>        
-        <button className='raise' onClick={increment}>Incrementar</button> */}
-
-
-        {/* <button className='raise' onClick={() => setCount (count +1)}
-        disabled={count === 3}>Incrementar
-        </button>
-
-        <button className='raise' onClick={() => setCount (count -1)}
-        disabled={count === 0}>Decrementar
-        </button> */}
 
         <button className='raise' onClick={() => setCount (count - count)}>Reset
         </button>
-
         <button className='raise' onClick={()=> onAdd(count)}>Agregar al carrito</button>
-
-        {/* <Link to='/cart'>
-            <button className='raise' onClick={ () => {
-                console.log(count);}}>
-                    Comprar
-            </button>
-        </Link> */}
-
         
     </div>
   )
