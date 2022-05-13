@@ -10,7 +10,7 @@ import CartWidget from '../CartWidget/cartWidget';
 
 import { Link , NavLink} from 'react-router-dom';
 
-const Navbar2 = () => {
+const Navbar = () => {
     return(
         <>
             <div className="Header2">
@@ -94,47 +94,4 @@ const Navbar2 = () => {
    
     )
 }
-export default Navbar2;
-
-
-/*
-const Navbar2 = () => {
-    return(
-        <>
-            <Nav className="Header">
-
-                <NavLink to='/' className="NavLi">
-                    <img src={require('../../recursos/montana.jpg')} alt='logo' />
-                </NavLink>
-
-                <Bars />
-
-                <NavMenu>
-                    <NavLink to='/about' activeStyle>
-                        About
-                    </NavLink>
-                    <NavLink to='/services' activeStyle>
-                        Services
-                    </NavLink>
-                    <NavLink to='/contact-us' activeStyle>
-                        Contact Us
-                    </NavLink>
-                    <NavLink to='/sign-up' activeStyle>
-                        Sign Up
-                    </NavLink>
-                    
-                </NavMenu>
-                
-                <NavBtn>
-                    <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-                </NavBtn>
-
-            </Nav>
-
-            <h1 className='titulo'>TITULO</h1>
-        </>
-   
-    )
-}
-export default Navbar2;
-*/
+export default Navbar;
