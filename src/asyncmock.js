@@ -2,67 +2,76 @@ const products = [
     {
         id:1,
         img:require('./recursos/Cards/forest.jpg'),
-        titulo:"Bosque",
-        descripcion:"Bosque descripcion y precio",
+        name:"Bosque",
+        place_detail:"Bosque place_detail y precio",
         category:"sudamerica",
-        price:5000
+        price:5000,
+        stock: '5'
     },
     {
         id:2,
         img:require('./recursos/Cards/city.jpg'),
-        titulo:"Ciudad",
-        descripcion:"Ciudad descripcion",
+        name:"Ciudad",
+        place_detail:"Ciudad place_detail",
         category:"norteamerica",
-        price:10000
+        price:10000,
+        stock: '5'
     },
     {
         id:3,
         img:require('./recursos/Cards/waterfall.jpg'),
-        titulo:"Cascada",
-        descripcion:"Cascada descripcion",
+        name:"Cascada",
+        place_detail:"Cascada place_detail",
         category:"sudamerica",
-        price:5000
+        price:5000,
+        stock: '5'
     },
     {
         id:4,
         img:require('./recursos/Cards/sea.jpg'),
-        titulo:"Oceano",
-        descripcion:"Oceano descripcion",
+        name:"Oceano",
+        place_detail:"Oceano place_detail",
         category:"asia",
-        price:10000
+        price:10000,
+        stock: '5'
     },
     {
         id:5,
         img:require('./recursos/Cards/starry-night.jpg'),
-        titulo:"Egipto",
-        descripcion:"Egipto descripcion",
+        name:"Egipto",
+        place_detail:"Egipto place_detail",
         category:"europa",
-        price:20000
+        price:20000,
+        stock: '5'
         
     },
     {
         id:6,
         img:require('./recursos/Cards/london.jpg'),
-        titulo:"London",
-        descripcion:"London descripcion",
+        name:"London",
+        place_detail:"London place_detail",
         category:"europa",
-        price:20000
+        price:20000,
+        stock: '5'
     },
     {
         id:7,
         img:require('./recursos/Cards/london.jpg'),
-        titulo:"London",
-        descripcion:"London descripcion",
+        name:"London",
+        place_detail:"London place_detail",
         category:"europa",
-        price:20000
+        price:20000,
+        stock: '5'
     },
 
     {
         id:8,
         img:require('./recursos/Cards/london.jpg'),
-        titulo:"Precio: 1000",
-        descripcion:"London descripcion London descripcion London descripcion London descripcion London descripcion",
-        price:20000
+        name:"Precio: 1000",
+        place_detail:"London place_detail London place_detail London place_detail London place_detail London place_detail",
+        category:"asia",
+        price:20000,
+        stock: '5'
     }
 ]
 
@@ -81,6 +90,7 @@ export const getCategories = () => {
         }, 1000)
     })
 }
+
 
 
 
@@ -103,14 +113,4 @@ export const getProductsById = (id) => {
         }, 2000)
     })
 }
-
-
-
-/*BUSCAR PRODUCOS POR CATEGORIA*/
-/* export const getProducts = () => {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            resolve(products)
-        }, 500)
-    })
-} */
+/*TRIPLE =?*/

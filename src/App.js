@@ -26,9 +26,10 @@ import Cart from './components/Cart/Cart'
 import Footer from './components/Footer/Footer'
 import NotFound from './components/NotFound/NotFound'
 import { CartContextProvider } from './context/CartContext'
-import { NotificationProvider } from './notification/Notification' */
+ */
 
-
+import { NotificationProvider } from './notification/Notification'
+import { CartContextProvider } from './context/CartContext'
 
 function App() {
 
@@ -36,8 +37,8 @@ function App() {
     console.log(cart)
 
     return (
-        /* <NotificationProvider>
-            <CartContextProvider> */
+        <NotificationProvider>
+            <CartContextProvider>
                 <BrowserRouter>
                     {/* /**********************    APP    ********************/}
                     <div className="App">
@@ -58,21 +59,13 @@ function App() {
 
                             <Routes>
 
-                                <Route path='/' element={<ItemListContainer/>}> </Route>
+                                {/* <Route path='/' element={<ItemListContainer/>}> </Route> */}
+                                <Route path='/' element={<ItemListContainer greeting={<p>Bienvenido a los viajes</p>}/>} />
                                 <Route path='/detalles' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
                                 <Route path='/detalles/:productId' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
                                 <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
                                 <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
                                 <Route path='/cart' element={null}></Route>
-
-
-                                {/* <Route path='/' element={<ItemListContainer/>}> </Route>
-                                <Route path='/detalles' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
-                                <Route path='/detalles/:productId' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
-                                
-                                <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
-
-                                <Route path='/cart' element={null}></Route> */}
 
                                 {/* <Route path='/categoria/norteamerica' element={<ItemListContainer/>}> </Route>
                                 <Route path='/categoria/europa' element={<ItemListContainer/>}> </Route>
@@ -81,13 +74,11 @@ function App() {
                             </Routes>
 
                         </div>
-
-
                         
                     </div>
                 </BrowserRouter>
-        /* </CartContextProvider>
-    </NotificationProvider> */
+        </CartContextProvider>
+    </NotificationProvider>
   );
 }
 
