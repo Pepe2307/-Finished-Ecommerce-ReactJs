@@ -2,8 +2,10 @@ import React from 'react'
 import Continents_Card from '../Continents_Card/Continents_Card'
 import './Continent_ListStyle.css'
 /*REACT ROUTER*/
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
-
+import { Link, NavLink } from 'react-router-dom'
+/* import { getCategories } from '../../../asyncmock'; */
+import CartWidget from '../../CartWidget/cartWidget';
+import { getCategories } from '../../../asyncmock';
 
 const Continent_List = ( {products} ) => {
   return (
@@ -34,7 +36,7 @@ const Continent_List = ( {products} ) => {
             imagen_cont={require('../../../recursos/Continentes/japan.jpg')}/>
         </Link>
 
-
+        
 
     </div>
   )

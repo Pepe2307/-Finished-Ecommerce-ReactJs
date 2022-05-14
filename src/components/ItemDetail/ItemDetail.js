@@ -41,7 +41,7 @@ const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
                 <p>Categoria: {category}</p>
                 <p>Precio: {price}</p>
 
-                {/* <ItemCount/> */}
+                
                 <div>
                     {<ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>}
                 </div>

@@ -64,18 +64,15 @@ function App() {
                                 <Route path='/' element={<ItemListContainer greeting={<p>Bienvenido a los viajes</p>}/>} />
                                 <Route path='/detalles' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
                                 <Route path='/detalles/:productId' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
-                                <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
+                                <Route path='/category/:categoryId' element={<ItemListContainer/>}> </Route>
                                 <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
-                                {/* <Route path='/cart' element={null}></Route> */}
 
+        
+                                {/* <Route path='/detail/:productId' element={<ItemDetailContainer />} /> */}
                                 
                                 <Route path='/form' element={<Form />}/>
                                 <Route path='/cart' element={<Cart />} />
 
-                                {/* <Route path='/categoria/norteamerica' element={<ItemListContainer/>}> </Route>
-                                <Route path='/categoria/europa' element={<ItemListContainer/>}> </Route>
-                                <Route path='/categoria/sudamerica' element={<ItemListContainer/>}> </Route>
-                                <Route path='/categoria/asia' element={<ItemListContainer/>}> </Route> */}
                             </Routes>
 
                         </div>
