@@ -22,7 +22,7 @@ const ItemListContainer = (props) => {
 
     useEffect(() => {
         setTimeout(() => {
-            setTitle('Nuestros Destinos')
+            setTitle('Nuestros Destinos:')
         }, 2000)
     })
 
@@ -34,7 +34,7 @@ const ItemListContainer = (props) => {
    
     return(
         <div onClick={handleClick}>
-            <div>{title}</div>
+            <div className='titulo_general'>{title}</div>
             <ItemList products={products}/>
         </div>
     )

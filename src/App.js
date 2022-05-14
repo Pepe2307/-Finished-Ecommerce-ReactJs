@@ -20,13 +20,14 @@ import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 //AGREGAR FORM Y CART
 
-/* import Index from './components/Index/Index'
+/* import Index from './components/Index/Index' 
+import Footer from './components/Footer/Footer'
+import NotFound from './components/NotFound/NotFound'*/
+
 import Form from './components/Form/Form'
 import Cart from './components/Cart/Cart'
-import Footer from './components/Footer/Footer'
-import NotFound from './components/NotFound/NotFound'
-import { CartContextProvider } from './context/CartContext'
- */
+
+
 
 import { NotificationProvider } from './notification/Notification'
 import { CartContextProvider } from './context/CartContext'
@@ -65,7 +66,11 @@ function App() {
                                 <Route path='/detalles/:productId' element={<ItemDetailContainer setCart={setCart}/>}> </Route>
                                 <Route path='/detalles/:categoryId' element={<ItemListContainer/>}> </Route>
                                 <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
-                                <Route path='/cart' element={null}></Route>
+                                {/* <Route path='/cart' element={null}></Route> */}
+
+                                
+                                <Route path='/form' element={<Form />}/>
+                                <Route path='/cart' element={<Cart />} />
 
                                 {/* <Route path='/categoria/norteamerica' element={<ItemListContainer/>}> </Route>
                                 <Route path='/categoria/europa' element={<ItemListContainer/>}> </Route>
