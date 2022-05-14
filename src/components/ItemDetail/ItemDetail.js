@@ -23,7 +23,7 @@ const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
 
         addItem ({...productObj, quantity: count})
 
-        setNotification('success', `agregaste ${count} ${name}`)
+        setNotification('success', `Agregaste ${count} Pasajes para: ${name}`)
 
     }
 
@@ -38,7 +38,7 @@ const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
 
                 <h1>Detalles - {name}</h1>
                 <p>{place_detail}</p>
-                <p>Categoria: {category}</p>
+                {/* <p>Categoria: {category}</p> */}
                 <p>Precio: {price}</p>
 
                 

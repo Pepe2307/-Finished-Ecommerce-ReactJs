@@ -46,22 +46,14 @@ const Navbar = () => {
                         className={({isActive}) => isActive ? 'navSelectedItem' : 'navItem'}>
                         {cat.description}</NavLink> </li>)}
                     </div>
-                    
-                    {/* <li>
-                        <NavLink to='/form' className={({isActive}) => isActive ? 'navSelectedItem' : 'navItem'}>CONTACTO</NavLink>    
-                    </li> */}
 
                 </ul>
-                
-                {/* <div className='boton'>
-                    <div className='boton2' to='/signin'>
-                        <NavLink to='/form' className={({isActive}) => isActive ? 'navSelectedItem' : 'navItem'}>CONTACTO</NavLink>    
-                    </div>
-                </div> */}
+   
+   
                 <div className='boton'>
-                    <div className='boton2' to='/signin'>
-                        <NavLink className='boton3' to='/form'>CONTACTO</NavLink>    
-                    </div>
+                    <NavLink className='boton2' to='/form'>
+                        CONTACTO
+                    </NavLink>
                 </div>
                 
             </div>

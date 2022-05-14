@@ -50,6 +50,9 @@
     margin-right: -24px;
     flex-direction: row;
 }
+.menu li a{
+    font-size: 30px;
+}
 @media screen and (max-width: 768px) {
     .menu{
         display: none;
@@ -65,8 +68,9 @@
     padding: 0 1rem;
     height: 100%;
 }
+
 /* .menu_li a{
-    font-size: 27px;
+    font-size: 30px;
 } */
 .listas{
     color: #fff;
@@ -106,12 +110,13 @@
 .boton2:hover{
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: black;
 }
 .boton3{
     text-decoration: none;
     color: white;
 }
+
 /*Display Menu Mobile*/
 .barras{
     display: none;
@@ -128,8 +133,6 @@
         cursor: pointer;
     }
 }
-
-
 
 
 ul{

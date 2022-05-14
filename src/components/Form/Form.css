@@ -1,0 +1,44 @@
+
+.contenedor{
+    color: white;
+    font-size: 20px;
+}
+
+.contenedor h1{
+    font-size: 90px;
+    margin-bottom: 0;
+}
+.contenedor h2{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 90px;
+}
+
+.formulario input{
+    width: 20%;
+    height: 30px;
+}
+
+.formulario textarea{
+    width: 20%;
+    height: 30px;
+}
+
+.boton_terminar {
+    --color: white;
+    --hover: white;
+    background-color: #2e2e2f;
+    border-radius: 20px;
+    width: 30%;
+    font-size: 50px;
+    padding: 20px;
+    margin: 0;
+}
+
+.boton_terminar:hover,
+.boton_terminar:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0 5px var(--hover);
+  transform: translateY(-0.25em);
+  transition-duration: 200ms;
+}

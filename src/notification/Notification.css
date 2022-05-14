@@ -1,7 +1,10 @@
 .Success {
     background-color: green;
+    border-radius: 20px;
+    color: white;
 }
 
-.Error {
+/* .Error {
     background-color: red;
-}
+    color: white;
+} */
