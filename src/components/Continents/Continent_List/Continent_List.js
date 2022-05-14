@@ -12,25 +12,25 @@ const Continent_List = ( {products} ) => {
     <div className='GaleriaContinentes'>
 
 
-        <Link to='/categoria/norteamerica' className='cont_link'>
+        <Link to='/category/norteamerica' className='cont_link'>
             <Continents_Card
             titulo_cont='Norteamerica'
             imagen_cont={require('../../../recursos/Continentes/goldengate.jpg')}/>
         </Link>
 
-        <Link to='/categoria/europa' className='cont_link'>
+        <Link to='/category/europa' className='cont_link'>
             <Continents_Card
-            titulo_cont='Europa'
+            titulo_cont='Europa y Africa'
             imagen_cont={require('../../../recursos/Continentes/coliseo1.jpg')}/>
         </Link>
 
-        <Link to='/categoria/sudamerica' className='cont_link'>
+        <Link to='/category/sudamerica' className='cont_link'>
             <Continents_Card
             titulo_cont='Sudamerica'
             imagen_cont={require('../../../recursos/Continentes/cristoredentor.jpg')}/>
         </Link>
 
-        <Link to='/categoria/asia' className='cont_link'>
+        <Link to='/category/asia' className='cont_link'>
             <Continents_Card
             titulo_cont='Asia'
             imagen_cont={require('../../../recursos/Continentes/japan.jpg')}/>

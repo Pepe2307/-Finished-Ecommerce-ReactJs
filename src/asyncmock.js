@@ -34,7 +34,7 @@ const products = [
         img:require('./recursos/Cards/sea.jpg'),
         name:"Oceano Atlantico (Lado Americano)",
         place_detail:"Viaje en crucero por El Atlántico, el cual es la parte del océano mundial de la Tierra que separa América (al oeste) de Europa y África (al este)",
-        category:"asia",
+        category:"norteamerica",
         days:"14 Dias",
         price:10000,
         stock: '5'
@@ -65,12 +65,11 @@ const products = [
         img:require('./recursos/Cards/japan1.jpg'),
         name:"Templos Japoneses",
         place_detail:"Japon al ser un pais que paso gran parte de su historia aislado al ser una isla desarrollo una cultura muy diferente a la del occidente y se puede notar en sus arquitecturas",
-        category:"europa",
+        category:"asia",
         days:"7 Dias",
         price:20000,
         stock: '5'
     },
-
     {
         id:8,
         img:require('./recursos/Cards/japan3.jpg'),
@@ -81,13 +80,32 @@ const products = [
         price:20000,
         stock: '5'
     },
-
     {
         id:9,
         img:require('./recursos/Cards/canada_mountains.jpg'),
         name:"Montañas de Canada",
         place_detail:"Dentro de las Montañas Rocosas canadienses se han establecido cinco parques nacionales, cuatro de ellos entrelazan y forman el Parque Patrimonio de la Humanidad Parque de las Montañas Rocosas Canadienses.",
         category:"norteamerica",
+        days:"14 Dias",
+        price:20000,
+        stock: '5'
+    },
+    {
+        id:10,
+        img:require('./recursos/Cards/venice.jpg'),
+        name:"Venecia",
+        place_detail:"Situada en una laguna pantanosa en el mar Adriático, entre las desembocaduras de los ríos Po y Piave, la ciudad de Venecia está formada por 120 pequeñas islas, comunicadas entre sí por centenares de puentes, ríos y canales, algunos de ellos de gran belleza",
+        category:"europa",
+        days:"7 Dias",
+        price:20000,
+        stock: '5'
+    },
+    {
+        id:11,
+        img:require('./recursos/Cards/korea.jpg'),
+        name:"Corea Del Sur",
+        place_detail:"La República de Corea conocida como Corea del Sur, es un país de Asia oriental, ubicada en la parte sur de la península de Corea. Limita al norte con la República Democrática Popular de Corea",
+        category:"asia",
         days:"14 Dias",
         price:20000,
         stock: '5'
@@ -132,4 +150,3 @@ export const getProductsById = (id) => {
         }, 2000)
     })
 }
-/*TRIPLE =?*/

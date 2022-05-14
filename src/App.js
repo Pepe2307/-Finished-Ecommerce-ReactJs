@@ -55,8 +55,7 @@ function App() {
                         {/**********************    GALERIA    ********************/}
                         <div>
 
-                            <Link to='/'           className='imagen_logo'>LISTA</Link>
-                            <Link to='/detalles'   className='imagen_logo'>DETALLES</Link>
+                            <Link to='/' className='imagen_logo'>LISTA COMPLETA</Link>
 
                             <Routes>
 

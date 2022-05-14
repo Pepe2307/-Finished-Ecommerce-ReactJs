@@ -22,7 +22,7 @@ const Card = ({id, img,name,place_detail, price, days}) => {
 
             <h1>{name}</h1>
             <p>{place_detail}</p>
-            <p>${price}</p>
+            <p>Precio por pasaje: <br/> ${price}</p>
             <p>Tiempo de estadia: <br/> {days}</p>
 
             {/* <button className='boton_detalle'>
@@ -33,11 +33,11 @@ const Card = ({id, img,name,place_detail, price, days}) => {
            
 
             <Link to={`/detalles/${id}`} className='detalle'>
-                <button className='boton_detalle'>DETALLE</button>
+                <button className='boton_detalle'>MAS DETALLES</button>
             </Link>
 
 
-            <h3>Cantidad de Pasajes</h3>
+            {/* <h3>Cantidad de Pasajes</h3> */}
             {/* <ItemCount/> */}
 
 

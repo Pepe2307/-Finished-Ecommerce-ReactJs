@@ -3,7 +3,7 @@ import CartContext from '../../context/CartContext'
 import ItemCart from '../ItemCart/ItemCart'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-
+import './Cart.css'
 const Cart = () => {
 
     const { cart, removeItem } = useContext(CartContext)
@@ -11,15 +11,13 @@ const Cart = () => {
     if(cart.length === 0) {
         return (
             <>
-                <h1>No hay productos</h1>
-                <Link to={`/`}>Inicio</Link>
+                <Link className='sin_productos' to={`/`}>No hay productos, Volver atras?</Link>
             </>
         )
     }
 
     return (
         <>
-            <h1>Cart</h1>
             <ItemCart/>
         </>
     )

@@ -1,14 +1,10 @@
 import React from 'react'
 import './headerStyles.css';
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-
 import CartWidget from '../CartWidget/cartWidget';
 import { Link , NavLink} from 'react-router-dom';
-
 import { getCategories } from '../../asyncmock';
 import { useState, useEffect } from 'react';
 
@@ -22,7 +18,6 @@ const Navbar = () => {
         })
     }, [])
 
-
     return(
         <>
             <div className="Header2">
@@ -30,42 +25,22 @@ const Navbar = () => {
                 <div className="imagen_logo">
                     <CartWidget/>
                 </div>
-
+                
                 <NavLink to='/'   className='imagen_logo'>
+                    Invento Travels
                     <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
                 </NavLink>
-  
-                <Link to='/'     className='imagen_logo'>Lista</Link>            
-
                 <div className='barras'>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </div>
                 
 
                 <ul className='menu'>
-                    {/* <li className='menu_li'>
-                        <a href="">
-                            <NavLink to='/'   >
-                                Home
-                                <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon>
-                            </NavLink> 
-                        </a>
-                    </li>
-
-
-                    <li className='menu_li'>
-                        <a href="#"> Destinos </a>
-                    </li>
-
-                    <li className='menu_li'>
-                        <a href="#"> Servicios </a>
-                    </li>
-
-                    <li className='menu_li'>
-                        <a href="#"> Contacto </a>
-                    </li> */}
-
                 
+                    <li>
+                        <Link to='/'>Lista Completa</Link>    
+                    </li>
+
                     <div className='menu_li'>
                         { categories.map(cat => <li> <NavLink key={cat.id} to={`/category/${cat.id}`}
                         className={({isActive}) => isActive ? 'navSelectedItem' : 'navItem'}>
