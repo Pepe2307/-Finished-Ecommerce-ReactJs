@@ -1,0 +1,13 @@
+.lista_compra{
+    background-color: rgb(57, 57, 58);
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.lista_compra li{
+    padding: 30px;
+    margin: 10px;
+    background-color: rgb(88, 87, 87);
+    border-radius: 20px;
+}

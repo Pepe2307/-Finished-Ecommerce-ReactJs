@@ -8,10 +8,10 @@ import { useParams } from 'react-router-dom'
 
 const ItemListContainer = (props) => {
     const [products, setProducts] = useState([])
-
+    const [title, setTitle] = useState()
     const {categoryId} = useParams()
-
     
+
     useEffect(() => {
         getProducts(categoryId).then(prods => {
             setProducts(prods)
@@ -20,7 +20,13 @@ const ItemListContainer = (props) => {
         })
    }, [categoryId])
 
+    useEffect(() => {
+        setTimeout(() => {
+            setTitle('Nuestros Destinos:')
+        }, 2000)
+    })
 
+    
     const handleClick = () => {
         console.log('click en item list container')
     }
@@ -28,6 +34,7 @@ const ItemListContainer = (props) => {
    
     return(
         <div onClick={handleClick}>
+            <div className='titulo_general'>{title}</div>
             <ItemList products={products}/>
         </div>
     )

@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
 .titulo_prop{
     font-size: 50px;
     color: coral;
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Rye', cursive;
     margin: 0;
 }
 .galeria_shop{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
     justify-items: center;
     align-items: center;
     grid-gap: 100px;
+}
+.titulo_general{
+    font-size: 90px;
+    color: white;
+    font-family:'Ubuntu', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }

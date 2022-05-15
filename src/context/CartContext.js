@@ -48,7 +48,7 @@ export const CartContextProvider = ({ children }) => {
     }
 
     const finishBuy = () => {
-        let finishBuy = alert('Buy completed')
+        let finishBuy = alert('Pasajes Comprados, Disfrute su viaje!')
         return finishBuy
     }
 

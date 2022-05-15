@@ -1,7 +1,5 @@
 .Success {
     background-color: green;
-}
-
-.Error {
-    background-color: red;
+    border-radius: 20px;
+    color: white;
 }

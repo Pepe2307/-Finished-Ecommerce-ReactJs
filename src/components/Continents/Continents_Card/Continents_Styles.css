@@ -4,7 +4,6 @@
     justify-content: space-between;
     gap: 20px;
 }
-
 .Continente{
     width: 600px;
     height: 300px;
@@ -21,20 +20,14 @@
     transition: 0.2s;
     --hover: #ffffff;
 }
-
 .Continente:hover,
 .Continente:focus {
-    /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
     box-shadow: 0 0 25px var(--hover);
     transform: translateY(-0.50em);
     transition-duration: 200ms;
 }
-
-
 .Continente h1{
     font-size: 50px;
     text-shadow: 3px 3px gray;
-
     padding: 70px 0;
-    
 }

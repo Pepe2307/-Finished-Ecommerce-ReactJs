@@ -6,7 +6,7 @@ const Continents_Card = ({titulo_cont,imagen_cont}) => {
     <div>
         <div className='Continentes_Container'>
             <div className='Continente'
-            style={{ backgroundImage: `url(${imagen_cont})` }}>
+                style={{ backgroundImage: `url(${imagen_cont})` }}>
 
                 <h1> { titulo_cont } </h1>
                 

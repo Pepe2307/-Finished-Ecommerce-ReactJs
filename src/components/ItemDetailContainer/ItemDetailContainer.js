@@ -4,12 +4,12 @@ import { getProductsById }  from '../../asyncmock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import './ItemDetailContainerStyles.css'
+import world from '../../recursos/world.png'
 
 
 const ItemDetailContainer = ( { setCart, cart } ) => { 
     const [product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
-
 
     const { productId } = useParams()
 
@@ -22,14 +22,11 @@ const ItemDetailContainer = ( { setCart, cart } ) => {
             setLoading(false)
         })
 
-
         return (() => {
             setProduct()
         })
 
     }, [productId])
-
-
 
 
     return (
@@ -38,8 +35,7 @@ const ItemDetailContainer = ( { setCart, cart } ) => {
                 loading ?
                      <>
                      <h1 className='texto_carga'>CARGANDO...</h1>
-                     <h1 className='texto_carga'>CARGANDO...</h1>
-                     <h1 className='texto_carga'>CARGANDO...</h1>
+                     <img src={world} className="carga-logo" alt="logo" />
                      </>:
                 product ?
                      <ItemDetail  {...product}  setCart={setCart} cart={cart} /> :
