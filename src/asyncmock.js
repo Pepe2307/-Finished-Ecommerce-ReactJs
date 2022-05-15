@@ -2,7 +2,7 @@ const products = [
     {
         id:1,
         img:require('./recursos/Cards/forest.jpg'),
-        name:"Bosque Amazonico",
+        name:"Amazonas",
         place_detail:"La selva Amazónica se desarrolla alrededor del río Amazonas y de su cuenca fluvial. Posee una vegetación tupida y exuberante, siempre verde que le otorga el título de el Pulmón del Planeta",
         category:"sudamerica",
         days:"7 Dias",
@@ -22,7 +22,7 @@ const products = [
     {
         id:3,
         img:require('./recursos/Cards/waterfall.jpg'),
-        name:"Cascada Salto del Ángel",
+        name:"Salto del Ángel",
         place_detail:"Salto del Ángel. La cascada es la cascada más alta del mundo con 979 metros de altura y 150 metros de anchura. Se sitúa en las tierras altas de Guayana en el estado de Bolívar, sureste de Venezuela",
         category:"sudamerica",
         days:"7 Dias",
@@ -32,7 +32,7 @@ const products = [
     {
         id:4,
         img:require('./recursos/Cards/sea.jpg'),
-        name:"Oceano Atlantico (Lado Americano)",
+        name:"Oceano Atlantico",
         place_detail:"Viaje en crucero por El Atlántico, el cual es la parte del océano mundial de la Tierra que separa América (al oeste) de Europa y África (al este)",
         category:"norteamerica",
         days:"14 Dias",
@@ -63,7 +63,7 @@ const products = [
     {
         id:7,
         img:require('./recursos/Cards/japan1.jpg'),
-        name:"Templos Japoneses",
+        name:"Kyoto",
         place_detail:"Japon al ser un pais que paso gran parte de su historia aislado al ser una isla desarrollo una cultura muy diferente a la del occidente y se puede notar en sus arquitecturas",
         category:"asia",
         days:"7 Dias",
@@ -83,7 +83,7 @@ const products = [
     {
         id:9,
         img:require('./recursos/Cards/canada_mountains.jpg'),
-        name:"Montañas de Canada",
+        name:"Canada",
         place_detail:"Dentro de las Montañas Rocosas canadienses se han establecido cinco parques nacionales, cuatro de ellos entrelazan y forman el Parque Patrimonio de la Humanidad Parque de las Montañas Rocosas Canadienses.",
         category:"norteamerica",
         days:"14 Dias",
@@ -112,13 +112,15 @@ const products = [
     }
 ]
 
-/*CATEGORIAS*/
+
+
 const categories = [
     {id: 'sudamerica', description: 'Sudamerica'},
     {id: 'asia', description: 'Asia'},
     {id: 'europa', description: 'Europa'},
     {id: 'norteamerica', description: 'Norteamerica'}
 ]
+
 
 export const getCategories = () => {
     return new Promise (resolve => {
@@ -129,9 +131,7 @@ export const getCategories = () => {
 }
 
 
-
-
-/*BUSCAR NORMAL/CATEGORIA*/
+/*BUSQUEDA NORMAL Y POR CATEGORIA*/
 export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
@@ -139,8 +139,6 @@ export const getProducts = (categoryId) => {
         }, 100)
     })
 }
-
-
 
 /*BUSCAR POR ID */
 export const getProductsById = (id) => {

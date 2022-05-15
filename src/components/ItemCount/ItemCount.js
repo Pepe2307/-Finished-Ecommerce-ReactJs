@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import './ItemCountStyle.css'
-import CartWidget from '../CartWidget/cartWidget';
-/*REACT ROUTER*/
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 const ItemCount = ( {initial, stock, onAdd} ) => {
     const [count, setCount] = useState(initial);
@@ -22,7 +19,6 @@ const ItemCount = ( {initial, stock, onAdd} ) => {
 
   return (
     <div>
-        {/* <CartWidget numero={0}/> */}
 
         <h2 className='counter'>{count}</h2>
 

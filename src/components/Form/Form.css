@@ -1,4 +1,3 @@
-
 .contenedor{
     color: white;
     font-size: 20px;
@@ -13,12 +12,10 @@
     margin-top: 0;
     margin-bottom: 90px;
 }
-
 .formulario input{
     width: 20%;
     height: 30px;
 }
-
 .formulario textarea{
     width: 20%;
     height: 30px;
@@ -34,7 +31,6 @@
     padding: 20px;
     margin: 0;
 }
-
 .boton_terminar:hover,
 .boton_terminar:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);

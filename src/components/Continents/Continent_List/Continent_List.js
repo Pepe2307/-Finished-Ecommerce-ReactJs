@@ -1,16 +1,11 @@
 import React from 'react'
 import Continents_Card from '../Continents_Card/Continents_Card'
 import './Continent_ListStyle.css'
-/*REACT ROUTER*/
 import { Link, NavLink } from 'react-router-dom'
-/* import { getCategories } from '../../../asyncmock'; */
-import CartWidget from '../../CartWidget/cartWidget';
-import { getCategories } from '../../../asyncmock';
 
 const Continent_List = ( {products} ) => {
   return (
     <div className='GaleriaContinentes'>
-
 
         <Link to='/category/norteamerica' className='cont_link'>
             <Continents_Card
@@ -35,8 +30,6 @@ const Continent_List = ( {products} ) => {
             titulo_cont='Asia'
             imagen_cont={require('../../../recursos/Continentes/japan.jpg')}/>
         </Link>
-
-        
 
     </div>
   )

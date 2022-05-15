@@ -1,3 +1,5 @@
+/*EFECTOS DE BOTONES:*/
+
 /*FILL IN*/
 .fill:hover,
 .fill:focus {
@@ -72,10 +74,7 @@
 }
 
 .raise {
-  /* --color: white;
-  --hover: #e5ff60;
-  background-color: #ffa260;
-  border-radius: 20px; */
+
 
   --color: white;
   --hover: #47bedf;
@@ -107,18 +106,6 @@ button:hover, button:focus {
   color: #fff;
 }
 
-/* body {
-  color: #fff;
-  background: #17181c;
-  font: 300 1em "Fira Sans", sans-serif;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-} */
-
 button {
   background: none;
   border: 2px solid;
@@ -138,8 +125,6 @@ button {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
 }
-
-  
 
 h1 {
   font-weight: 400;

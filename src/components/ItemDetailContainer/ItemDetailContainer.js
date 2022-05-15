@@ -11,7 +11,6 @@ const ItemDetailContainer = ( { setCart, cart } ) => {
     const [product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
 
-
     const { productId } = useParams()
 
     useEffect( () => {
@@ -23,14 +22,11 @@ const ItemDetailContainer = ( { setCart, cart } ) => {
             setLoading(false)
         })
 
-
         return (() => {
             setProduct()
         })
 
     }, [productId])
-
-
 
 
     return (

@@ -7,7 +7,7 @@ const Notification = ({ message, severity }) => {
 const notificationStyles = {
     position: 'absolute',
     top: 2050,
-    right: 850,
+    right: 770,
     
     width: 'auto',
     height: 'auto',
