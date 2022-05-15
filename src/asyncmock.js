@@ -140,7 +140,6 @@ export const getProducts = (categoryId) => {
     })
 }
 
-/*BUSCAR POR ID */
 export const getProductsById = (id) => {
     return new Promise (resolve => {
         setTimeout(() => {
