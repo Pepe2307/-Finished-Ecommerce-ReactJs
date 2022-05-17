@@ -43,7 +43,7 @@ const products = [
         id:5,
         img:require('./recursos/Cards/starry-night.jpg'),
         name:"Egipto",
-        place_detail:"Cuna de la antigua civilización egipcia, la cual fue el origen de la actual cultura occidental, influyendo decisivamente en la historia de la humanidad y dejando maravillas como las pirámides y la gran esfinge,",
+        place_detail:"Cuna de la antigua civilización egipcia, la cual fue el origen de la actual cultura occidental, influyendo decisivamente en la historia de la humanidad y dejando maravillas como las pirámides y la gran esfinge",
         category:"europa",
         days:"7 Dias",
         price:20000,
@@ -114,7 +114,7 @@ const products = [
 
 
 
-const categories = [
+/* const categories = [
     {id: 'sudamerica', description: 'Sudamerica'},
     {id: 'asia', description: 'Asia'},
     {id: 'europa', description: 'Europa'},
@@ -131,7 +131,6 @@ export const getCategories = () => {
 }
 
 
-/*BUSQUEDA NORMAL Y POR CATEGORIA*/
 export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
@@ -146,4 +145,4 @@ export const getProductsById = (id) => {
             resolve(products.find(prod => prod.id == id))
         }, 2000)
     })
-}
+} */
