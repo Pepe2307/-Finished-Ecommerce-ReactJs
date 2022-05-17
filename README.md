@@ -5,9 +5,9 @@ Aplicacion sobre e-commerce en venta de pasajes para viajes alrededor del mundo 
 
 # COMO EJECUTAR:
 
-1)  Clonando Repositorio: En la pagina del repositorio ir a "Code" > Copiar Link del repositorio > Copiarlo con GitBash > Abrir en Visual Studio Code > Una vez abierta la carpeta dar click derecho en la carpeta abierta en VSC > "Abrir en terminal Integrado" > "npm install" > "npm start"
+1)  Clonando Repositorio: En la pagina del repositorio ir a "Code" > Copiar Link del repositorio > Copiarlo con GitBash > Abrir en Visual Studio Code > Una vez abierta la carpeta dar click derecho en la carpeta abierta en VSC o en "package.json" > "Abrir en terminal Integrado" > "npm install" > "npm start"
 
-2)  Descargando .ZIP Ir a "Code" > "Download .ZIP" > Descomprimir carpeta > Abrir en Visual Studio Code > Una vez abierta la carpeta dar click derecho en la carpeta abierta en VSC > > "Abrir en terminal Integrado" > "npm install" > "npm start"
+2)  Descargando .ZIP Ir a "Code" > "Download .ZIP" > Descomprimir carpeta > Abrir en Visual Studio Code > Una vez abierta la carpeta dar click derecho en "package.json" > > "Abrir en terminal Integrado" > "npm install" > "npm start"
 
 # Tecnologias/Software Utilizado en la creacion del proyecto:
     -JAVASCRIPT
