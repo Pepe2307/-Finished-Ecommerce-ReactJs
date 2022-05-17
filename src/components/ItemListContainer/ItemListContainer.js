@@ -15,11 +15,6 @@ const ItemListContainer = (props) => {
     const [show, setShow] = useState(false)
 
     useEffect(() => {
-        /* getProducts(categoryId).then(prods => {
-            setProducts(prods)
-        }).catch(error => {
-            console.log(error) */
-
 
         const collectionRef = categoryId
         ? query(collection (firestoreDb, 'products'), where('category', '==', categoryId))
@@ -42,12 +37,6 @@ const ItemListContainer = (props) => {
         }, 2000)
     })
 
-    /* if(products.length === 0) {
-        return <h1 className='titulo_general'>No hay productos de esta categoría</h1>
-    } */
-
-
-    
     const handleClick = () => {
         console.log('click en item list container')
     }

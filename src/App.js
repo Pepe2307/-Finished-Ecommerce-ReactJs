@@ -12,11 +12,6 @@ import Cart from './components/Cart/Cart'
 import { NotificationProvider } from './notification/Notification'
 import { CartContextProvider } from './context/CartContext'
 
-//AGREGAR FORM Y CART
-
-/* import Index from './components/Index/Index' 
-import Footer from './components/Footer/Footer'
-import NotFound from './components/NotFound/NotFound'*/
 
 
 function App() {

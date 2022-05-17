@@ -111,38 +111,3 @@ const products = [
         stock: '5'
     }
 ]
-
-
-
-/* const categories = [
-    {id: 'sudamerica', description: 'Sudamerica'},
-    {id: 'asia', description: 'Asia'},
-    {id: 'europa', description: 'Europa'},
-    {id: 'norteamerica', description: 'Norteamerica'}
-]
-
-
-export const getCategories = () => {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            resolve(categories)
-        }, 1000)
-    })
-}
-
-
-export const getProducts = (categoryId) => {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            resolve(categoryId ? products.filter(prod => prod.category === categoryId) : products)
-        }, 100)
-    })
-}
-
-export const getProductsById = (id) => {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            resolve(products.find(prod => prod.id == id))
-        }, 2000)
-    })
-} */

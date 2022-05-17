@@ -15,7 +15,6 @@ const Navbar = () => {
     const [categories, setCategories] = useState([])
 
     useEffect (() => {
-        /* getCategories().then(categories => { */
         getDocs(collection(firestoreDb, 'categories')).then(response => {
             const categories = response.docs.map(doc => {
                 return { id: doc.id, ...doc.data()}
@@ -56,11 +55,7 @@ const Navbar = () => {
                 </ul>
    
    
-                <div className='boton'>
-                    <NavLink className='boton2' to='/form'>
-                        CONTACTO
-                    </NavLink>
-                </div>
+                
                 
             </div>
         </>

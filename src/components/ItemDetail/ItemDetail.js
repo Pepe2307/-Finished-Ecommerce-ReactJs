@@ -38,7 +38,6 @@ const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
 
                 <h1>Detalles - {name}</h1>
                 <p>{place_detail}</p>
-                {/* <p>Categoria: {category}</p> */}
                 <p>Precio: {price}</p>
 
                 
@@ -46,10 +45,6 @@ const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
                     {<ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>}
                 </div>
 
-                {/* <footer className='ItemFooter'>
-                    isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> :
-                    <ItemCount  onAdd={handleAdd} stock={stock} />
-                </footer> */}
         </div>
     )
 }
