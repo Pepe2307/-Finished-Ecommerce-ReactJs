@@ -11,3 +11,10 @@
     background-color: rgb(88, 87, 87);
     border-radius: 20px;
 }
+
+.boton_compra{
+    color: rgb(228, 218, 103);
+    text-decoration: none;
+    width: 100%;
+    font-size: 30px;
+}

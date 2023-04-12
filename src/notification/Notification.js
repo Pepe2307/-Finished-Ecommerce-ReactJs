@@ -1,13 +1,15 @@
-import React from 'react'
 import './Notification.css'
-import { useState, createContext, useContext } from 'react'
+
+import { createContext, useContext, useState } from 'react'
+
+import React from 'react'
 
 const Notification = ({ message, severity }) => {
 
 const notificationStyles = {
     position: 'absolute',
-    top: 2050,
-    right: 770,
+    top: 2150,
+    right: 1590,
     
     width: 'auto',
     height: 'auto',
