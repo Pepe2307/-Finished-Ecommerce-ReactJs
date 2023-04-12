@@ -1,11 +1,15 @@
+import './ItemCart.css'
+
+import CartContext from '../../context/CartContext'
+import { NavLink } from 'react-router-dom'
 import React from 'react'
 import { useContext } from 'react'
-import CartContext from '../../context/CartContext'
-import './ItemCart.css'
 
 const ItemCart = () => {
 
-    const { cart, removeItem, totalCost, clearCart, finishBuy } = useContext(CartContext)
+    /* const { cart, removeItem, totalCost, clearCart, finishBuy } = useContext(CartContext) */
+    const { cart, removeItem, totalCost, clearCart } = useContext(CartContext)
+
 
     return (
         <div>
@@ -19,7 +23,14 @@ const ItemCart = () => {
             
 
             <button className='boton_detalle' onClick={()=> clearCart()}>Vaciar carrito</button>
-            <button className='boton_detalle' onClick={()=> finishBuy()}>Finalizar compra</button>
+            {/* <button className='boton_detalle' onClick={()=> finishBuy()}>Finalizar compra</button> */}
+
+            <button className='boton_detalle'>
+                <NavLink className={'boton_compra'} to='/form'>
+                    Finalizar compra
+                </NavLink>
+            </button>
+
         </ul>
         
         </div>
