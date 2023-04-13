@@ -23,3 +23,17 @@
     margin-top: 40px;
     margin-bottom: 80px;
 }
+
+
+
+@media (max-width: 1400px) {
+    .galeria_shop{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .galeria_shop{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }

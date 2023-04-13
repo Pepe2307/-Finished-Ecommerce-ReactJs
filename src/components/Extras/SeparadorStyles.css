@@ -7,4 +7,8 @@
 .fondo-separador{
     overflow: hidden;
 }
-
+@media (max-width: 1919px) {
+    .svg-separador{
+        display: none;
+    }
+  }

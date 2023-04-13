@@ -179,3 +179,12 @@ li a:hover{
     background-color: #55555873;
     border-radius: 20px;
 }
+
+@media (max-width: 900px) {
+    .contacto_logo{
+        display: none;
+    }
+    .aplication-logo{
+        display: none;
+    }
+  }

@@ -9,3 +9,9 @@
 .cont_link{
     text-decoration: none;
 }
+
+@media (max-width: 1300px) {
+    .GaleriaContinentes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }

@@ -1,5 +1,6 @@
-import React from 'react'
 import './SeparadorStyles.css'
+
+import React from 'react'
 
 const Separador = () => {
   return (

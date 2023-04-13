@@ -31,13 +31,13 @@ const Navbar = () => {
                 </div>
                 
                 <NavLink to='/'   className='imagen_logo'>
-                <img src={world2} className="aplication-logo" alt="logo" />
-                    Invento Travels
+                    <img src={world2} className="aplication-logo" alt="logo" />
+                        Invento Travels
                     <img src={world2} className="aplication-logo" alt="logo" />
                 </NavLink>
-                <div className='barras'>
+                {/* <div className='barras'>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-                </div>
+                </div> */}
    
                 <div /* className='boton' */>
                         <NavLink className='contacto_logo' to='/form' >
