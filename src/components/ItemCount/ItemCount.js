@@ -25,9 +25,6 @@ const ItemCount = ( {initial, stock, onAdd} ) => {
 
         <button className='raise' onClick={increment}>Incrementar</button>
         <button className='raise' onClick={decrement}>Decrementar</button>        
-        
-
-        {/* <button className='raise' onClick={() => setCount (count - count)}>Reset</button> */}
         <button className='raise' onClick={()=> onAdd(count)}>Agregar al carrito</button>
         
     </div>

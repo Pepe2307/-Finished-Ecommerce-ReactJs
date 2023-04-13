@@ -16,8 +16,6 @@ const Presentacion = () => {
                 </p>
             </a>
             
-            {/* <img src={world} className="aplication-logo" alt="logo" /> */}
-
         </div>
     </div>
   )
