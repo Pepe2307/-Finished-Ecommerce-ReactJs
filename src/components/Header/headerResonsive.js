@@ -40,9 +40,9 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </div>
    
-                <div className='boton'>
-                        <NavLink className='boton2' to='/form' >
-                            CONTACTO
+                <div /* className='boton' */>
+                        <NavLink className='contacto_logo' to='/form' >
+                            Contacto
                         </NavLink>
                 </div>
                 

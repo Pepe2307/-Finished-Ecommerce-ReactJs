@@ -5,12 +5,33 @@
 .Header2{
     background-color: rgb(56, 56, 56);
     height: 80px;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content:space-evenly;
     z-index: 10;
+    margin-top: 20px;
+
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 25px rgb(0, 0, 0);
+    box-shadow: 0 0 25px rgb(0, 0, 0);    
+    background-image: imagen_cont;
+    background-size: cover;
+    background-position: center;
+
+    transition: 0.2s;
+    --hover: #ffffff;
 }
-.imagen_logo{
+
+
+.imagen_logo:hover,
+.imagen_logo:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0 5px var(--hover);
+  transform: translateY(0.25em);
+  transition-duration: 600ms;
+  background-color: rgb(35, 35, 35);
+}
+.imagen_logo {
     color: #fff;
     display: flex;
     align-items: center;
@@ -18,19 +39,37 @@
     padding: 0 1rem;
     height: 100%;
     font-size: 50px;
+    transition-duration: 600ms;
+    --color: white;
+    --hover: white;
+    border-radius: 20px;
 }
-.imagen_logo:hover{
-    color: white;
 
-    background: transparent;
-    
-    border-radius: 80px;
-    box-shadow:
-    0 0 2rem rgba(245, 245, 245, 0.603),
-    0 0 0.8rem rgba(254, 254, 255, 0.644),
-    0 0 2.8rem rgba(246, 247, 250, 0.507),
-    inset 0 0 1.3rem rgba(252, 248, 248, 0.335);
+.contacto_logo:hover,
+.contacto_logo:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0 5px var(--hover);
+  transform: translateY(0.25em);
+  transition-duration: 600ms;
+  background-color: rgb(35, 35, 35);
 }
+.contacto_logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 50px;
+    transition-duration: 600ms;
+    --color: white;
+    --hover: white;
+    border-radius: 20px;
+    font-size: 39px;
+}
+
+
+
 .menu{
     display: flex;
     align-items: center;
