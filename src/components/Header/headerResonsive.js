@@ -1,13 +1,12 @@
 import './headerStyles.css';
 
-import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import CartWidget from '../CartWidget/cartWidget';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { NavLink } from 'react-router-dom';
 import React from 'react'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 import { getCategories } from '../../asyncmock';
 import world2 from '../../recursos/world2.png'
 

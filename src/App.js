@@ -34,7 +34,7 @@ function App() {
 
                         <div>
                             <Link to='/' className='boton_lista'>
-                                ✨LISTA COMPLETA✨
+                                <span>✨</span>LISTA COMPLETA<span>✨</span>
                             </Link>
 
                             <Routes>

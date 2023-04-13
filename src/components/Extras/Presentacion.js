@@ -7,9 +7,9 @@ const Presentacion = () => {
     <div className='aplication'>
         <div className='aplication-nav'>
 
-            <a className="aplication-presentacion" href="#">
+            <a className="aplication-presentacion">
                 <p>
-                Bienvenido! Donde desea viajar?
+                Bienvenido! ¿Donde desea viajar?
                 <br/>
                 <br/>
                 Seleccione un destino:

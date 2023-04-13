@@ -15,7 +15,7 @@ const Cart = () => {
         
     }, [])
     
-    const { cart, removeItem } = useContext(CartContext)
+    const { cart } = useContext(CartContext)
 
     if(cart.length === 0) {
         return (

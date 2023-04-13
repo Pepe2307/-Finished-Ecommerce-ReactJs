@@ -1,7 +1,8 @@
-import React from 'react'
 import './Continents_Styles.css'
 
-const Continents_Card = ({titulo_cont,imagen_cont}) => {
+import React from 'react'
+
+const ContinentsCard = ({titulo_cont,imagen_cont}) => {
   return (
     <div>
         <div className='Continentes_Container'>
@@ -16,4 +17,4 @@ const Continents_Card = ({titulo_cont,imagen_cont}) => {
   )
 }
 
-export default Continents_Card
+export default ContinentsCard
