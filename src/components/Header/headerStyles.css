@@ -20,16 +20,16 @@
     font-size: 50px;
 }
 .imagen_logo:hover{
-    color: rgb(5, 63, 255);
+    color: white;
 
     background: transparent;
     
     border-radius: 80px;
     box-shadow:
-    0 0 2rem rgba(0, 0, 0, 0.603),
-    0 0 0.8rem rgba(15, 39, 128, 0.644),
-    0 0 2.8rem rgba(10, 48, 184, 0.507),
-    inset 0 0 1.3rem rgba(31, 73, 223, 0.335);
+    0 0 2rem rgba(245, 245, 245, 0.603),
+    0 0 0.8rem rgba(254, 254, 255, 0.644),
+    0 0 2.8rem rgba(246, 247, 250, 0.507),
+    inset 0 0 1.3rem rgba(252, 248, 248, 0.335);
 }
 .menu{
     display: flex;

@@ -1,11 +1,12 @@
 import './ItemDetailStyle.css'
-import React from 'react'
-import {Link} from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount'
-import { useState, useContext } from 'react'
-import CartContext from '../../context/CartContext'
-import { useNotification } from '../../notification/Notification'
 
+import { useContext, useState } from 'react'
+
+import CartContext from '../../context/CartContext'
+import ItemCount from '../ItemCount/ItemCount'
+import {Link} from 'react-router-dom'
+import React from 'react'
+import { useNotification } from '../../notification/Notification'
 
 const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
 
@@ -38,18 +39,14 @@ const ItemDetail = ({ id, img, name, place_detail, category, price, stock}) => {
 
                 <h1>Detalles - {name}</h1>
                 <p>{place_detail}</p>
-                {/* <p>Categoria: {category}</p> */}
-                <p>Precio: {price}</p>
+                <p className='descripcion_style'>Precio: {price}</p>
 
                 
                 <div>
                     {<ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>}
                 </div>
 
-                {/* <footer className='ItemFooter'>
-                    isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> :
-                    <ItemCount  onAdd={handleAdd} stock={stock} />
-                </footer> */}
+                
         </div>
     )
 }

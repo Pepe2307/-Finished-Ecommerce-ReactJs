@@ -1,17 +1,26 @@
-import React from 'react'
+import './Cart.css'
+
+import { useContext, useEffect } from 'react'
+
 import CartContext from '../../context/CartContext'
 import ItemCart from '../ItemCart/ItemCart'
-import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import './Cart.css'
+import React from 'react'
+
 const Cart = () => {
 
+    useEffect(() => {
+
+        window.scrollTo(0, 9999)
+        
+    }, [])
+    
     const { cart, removeItem } = useContext(CartContext)
 
     if(cart.length === 0) {
         return (
             <>
-                <Link className='sin_productos' to={`/`}>No hay productos, Volver atras?</Link>
+                <Link className='sin_productos' to={`/`}><br/> No hay productos, <br/> ¿Volver atras?</Link>
             </>
         )
     }

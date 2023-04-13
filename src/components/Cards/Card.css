@@ -47,7 +47,6 @@
     border-top-right-radius: 20px;
 }
 
-/*RAISE EFFECT*/
 .boton_detalle:hover,
 .boton_detalle:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
@@ -72,4 +71,9 @@
 .full{
     margin-bottom: 0px;
     padding-bottom: 60px;
+}
+.descripcion_style{
+    /* color: #6a97db; */
+    font-weight: bold;
+    font-size: 18px;
 }

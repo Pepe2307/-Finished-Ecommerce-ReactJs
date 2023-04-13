@@ -52,6 +52,29 @@
     margin-top: 70px;
 }
 
+.boton_lista{
+    color: #fff;
+    /* display: flex; */
+    align-items: center;
+    text-decoration:underline;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 50px;
+}
+.boton_lista:hover{
+    color: white;
+
+    background: transparent;
+    
+    border-radius: 80px;
+    box-shadow:
+    0 0 2rem rgba(245, 245, 245, 0.603),
+    0 0 0.8rem rgba(254, 254, 255, 0.644),
+    0 0 2.8rem rgba(246, 247, 250, 0.507),
+    inset 0 0 1.3rem rgba(252, 248, 248, 0.335);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(360deg);

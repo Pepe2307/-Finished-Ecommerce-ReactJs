@@ -1,11 +1,11 @@
-import React from 'react'
 import './cartWidget.css'
-import CartContext from '../../context/CartContext'
-import { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
+import CartContext from '../../context/CartContext'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
+import React from 'react'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from 'react'
 
 const CartWidget = () => {
 

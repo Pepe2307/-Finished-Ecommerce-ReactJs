@@ -109,6 +109,16 @@ const products = [
         days:"14 Dias",
         price:20000,
         stock: '5'
+    },
+    {
+        id:12,
+        img:require('./recursos/Cards/buenos_aires.jpg'),
+        name:"Buenos Aires",
+        place_detail:"Buenos Aires es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA) También es llamada Capital Federal, por ser la sede del gobierno nacional.",
+        category:"sudamerica",
+        days:"14 Dias",
+        price:10000,
+        stock: '5'
     }
 ]
 

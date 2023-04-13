@@ -1,23 +1,18 @@
-import React, { useState }  from 'react';
 import './App.css';
-import Navbar from './components/Header/headerResonsive';
+
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import React, { useState }  from 'react';
+
+import Cart from './components/Cart/Cart'
+import { CartContextProvider } from './context/CartContext'
 import Continent_List from './components/Continents/Continent_List/Continent_List';
+import Form from './components/Form/Form'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Navbar from './components/Header/headerResonsive';
+import { NotificationProvider } from './notification/Notification'
 import Presentacion from './components/Extras/Presentacion';
 import Separador from './components/Extras/Separador';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
-import Form from './components/Form/Form'
-import Cart from './components/Cart/Cart'
-import { NotificationProvider } from './notification/Notification'
-import { CartContextProvider } from './context/CartContext'
-
-//AGREGAR FORM Y CART
-
-/* import Index from './components/Index/Index' 
-import Footer from './components/Footer/Footer'
-import NotFound from './components/NotFound/NotFound'*/
-
 
 function App() {
 
@@ -38,7 +33,9 @@ function App() {
                         </nav>
 
                         <div>
-                            <Link to='/' className='imagen_logo'>LISTA COMPLETA</Link>
+                            <Link to='/' className='boton_lista'>
+                                ✨LISTA COMPLETA✨
+                            </Link>
 
                             <Routes>
                                 <Route path='/' element={<ItemListContainer greeting={<p>Bienvenido a los viajes</p>}/>} />

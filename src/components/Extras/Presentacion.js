@@ -1,6 +1,6 @@
-import React from 'react'
 import './PresentacionStyles.css'
-import world from '../../recursos/world.png'
+
+import React from 'react'
 
 const Presentacion = () => {
   return (
@@ -16,7 +16,7 @@ const Presentacion = () => {
                 </p>
             </a>
             
-            <img src={world} className="aplication-logo" alt="logo" />
+            {/* <img src={world} className="aplication-logo" alt="logo" /> */}
 
         </div>
     </div>

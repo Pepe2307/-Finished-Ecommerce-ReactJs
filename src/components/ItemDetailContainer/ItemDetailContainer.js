@@ -1,11 +1,12 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { getProductsById }  from '../../asyncmock'
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { useParams } from 'react-router-dom'
 import './ItemDetailContainerStyles.css'
-import world from '../../recursos/world.png'
 
+import { useEffect, useState } from 'react'
+
+import ItemDetail from '../ItemDetail/ItemDetail'
+import React from 'react'
+import { getProductsById }  from '../../asyncmock'
+import { useParams } from 'react-router-dom'
+import world from '../../recursos/world2.png'
 
 const ItemDetailContainer = ( { setCart, cart } ) => { 
     const [product, setProduct] = useState()
@@ -34,7 +35,7 @@ const ItemDetailContainer = ( { setCart, cart } ) => {
             {
                 loading ?
                      <>
-                     <h1 className='texto_carga'>CARGANDO...</h1>
+                     <h1 className='texto_carga'>Simulacion de carga...</h1>
                      <img src={world} className="carga-logo" alt="logo" />
                      </>:
                 product ?

@@ -1,9 +1,10 @@
 import './Form.css'
 
+import { useEffect, useState } from 'react'
+
 import CartContext from '../../context/CartContext'
 import React from 'react'
 import { useContext } from 'react'
-import { useState } from 'react'
 
 const Form = () => {
 
@@ -16,6 +17,11 @@ const Form = () => {
         console.log(input)
     }
     
+    useEffect(() => {
+
+        window.scrollTo(0, 9999)
+        
+    }, [])
 
     return (
 
@@ -32,7 +38,6 @@ const Form = () => {
                 <li>011 9999-9999</li>
             </ul>
 
-        {/* <div className="contacto"> */}
         <div className="formulariocontainer">
             <form className="formulario" onSubmit={handleSubmit}>
                 <p>
@@ -51,12 +56,11 @@ const Form = () => {
                     <label>Teléfono: <br/></label>
                     <input type="text" onChange={(e) => setInput(e.target.value)} name="teléfono" required/>
                 </p>
-                <p class="full">
+                <p class="">
                     <label>Mensaje: <br/></label>
                     <textarea name="mensaje" onChange={(e) => setInput(e.target.value)} required></textarea>
                 </p>
                 <p class="full">
-                    {/* <button type='submit' className="boton_terminar">Enviar</button> */}
                     <button type='submit' className="boton_terminar" onClick={()=> finishBuy()}>
                         Enviar
                     </button>
